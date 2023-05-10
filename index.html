@@ -1,0 +1,760 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="animacao_aeropendulo_reference/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
+    
+    
+      
+        <title>Documentação da Biblioteca Labvirtual</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7bf56d0a.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-labvirtual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentação da Biblioteca Labvirtual" class="md-header__button md-logo" aria-label="Documentação da Biblioteca Labvirtual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação da Biblioteca Labvirtual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentação LabVirtual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Modo Noturno"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Modo Noturno" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-blue" data-md-color-accent=""  aria-label="Modo Claro"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Modo Claro" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentação da Biblioteca Labvirtual" class="md-nav__button md-logo" aria-label="Documentação da Biblioteca Labvirtual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentação da Biblioteca Labvirtual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Documentação LabVirtual
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Documentação LabVirtual
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacao-da-biblioteca" class="md-nav__link">
+    Instalação da Biblioteca
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalação da Biblioteca">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-instalar" class="md-nav__link">
+    Como Instalar?
+  </a>
+  
+    <nav class="md-nav" aria-label="Como Instalar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-pip" class="md-nav__link">
+    Instalação com o pip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-conda" class="md-nav__link">
+    Instalação com o conda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-poetry" class="md-nav__link">
+    Instalação com o poetry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-de-interesse" class="md-nav__link">
+    Sistemas de interesse:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="animacao_aeropendulo_reference/" class="md-nav__link">
+        Docs Módulo animacao_aeropendulo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="graficos_aeropendulo_reference/" class="md-nav__link">
+        Docs Módulo graficos_aeropendulo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacao-da-biblioteca" class="md-nav__link">
+    Instalação da Biblioteca
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalação da Biblioteca">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-instalar" class="md-nav__link">
+    Como Instalar?
+  </a>
+  
+    <nav class="md-nav" aria-label="Como Instalar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-pip" class="md-nav__link">
+    Instalação com o pip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-conda" class="md-nav__link">
+    Instalação com o conda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacao-com-o-poetry" class="md-nav__link">
+    Instalação com o poetry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-de-interesse" class="md-nav__link">
+    Sistemas de interesse:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="documentacao-labvirtual">Documentação LabVirtual</h1>
+<p>Link do <a href="https://pypi.org/project/labvirtual/">PyPi</a>.</p>
+<p>Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.</p>
+<h2 id="instalacao-da-biblioteca">Instalação da Biblioteca</h2>
+<h3 id="como-instalar">Como Instalar?</h3>
+<p>Para instalar o LabVirtual você pode usar o pip, conda ou o poetry.</p>
+<p>A biblioteca está disponível para ser instalada via o gerenciador de pacotes do python, para instalar basta digitar o comando abaixo em seu terminal.</p>
+<h4 id="instalacao-com-o-pip">Instalação com o pip</h4>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>labvirtual
+</code></pre></div>
+<h4 id="instalacao-com-o-conda">Instalação com o conda</h4>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>labvirtual
+</code></pre></div>
+<h4 id="instalacao-com-o-poetry">Instalação com o poetry</h4>
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>add<span class="w"> </span>labvirtual
+</code></pre></div>
+<h2 id="sistemas-de-interesse">Sistemas de interesse:</h2>
+<p>Sistemas possíveis:
+- 1 - <a href="/labvirtual/simulador_maglev/docs/MAGLEV.html">Maglev</a>
+- 4 - <a href="/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html">Aeropêndulo</a></p>
+<h1 id="introducao">Introdução</h1>
+<h2 id="exemplo-de-uso">Exemplo de uso:</h2>
+<h3 id="exemplo-maglev">Exemplo Maglev</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># -----------------------------------------------------</span>
+<span class="c1"># Universidade Federal do Pará</span>
+<span class="c1"># Campus Universitário de Tucuruí</span>
+<span class="c1"># Faculdade de Engenharia Elétrica</span>
+<span class="c1"># -----------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># Laboratório Virtual Sistemas Dinâmicos e Controle</span>
+<span class="c1"># Simulador: Maglev</span>
+<span class="c1"># Autor: Yuri Cota</span>
+<span class="c1"># Orientadores: Prof. Dr: Raphael Teixeira,</span>
+<span class="c1">#               Prof. Dr: Rafael Bayma</span>
+<span class="c1">#</span>
+<span class="c1"># Data: 2023</span>
+<span class="c1">#  ----------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># Bibliotecas</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">import</span> <span class="nn">vpython</span> <span class="k">as</span> <span class="nn">vp</span>
+
+<span class="c1"># Importando o Modelo Matemático do Maglev</span>
+<span class="kn">from</span> <span class="nn">labvirtual.simulador_maglev</span> <span class="kn">import</span> <span class="n">Maglev</span>
+
+<span class="c1"># Importando o Compensador</span>
+<span class="kn">from</span> <span class="nn">labvirtual.simulador_maglev</span> <span class="kn">import</span> <span class="n">Compensador</span>
+
+<span class="c1"># Importando Simulador e Gráfico</span>
+<span class="kn">from</span> <span class="nn">labvirtual.simulador_maglev</span> <span class="kn">import</span> <span class="n">Simulacao</span>
+<span class="kn">from</span> <span class="nn">labvirtual.simulador_maglev</span> <span class="kn">import</span> <span class="n">Grafico</span>
+
+
+<span class="k">def</span> <span class="nf">run_maglev</span><span class="p">():</span>
+    <span class="c1"># Criação dos objetos da planta e controlador para simular</span>
+    <span class="n">mag</span> <span class="o">=</span> <span class="n">Maglev</span><span class="p">(</span><span class="n">m</span><span class="o">=</span><span class="mf">29e-3</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mf">9.55e-6</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="mf">2.19e-3</span><span class="p">,</span> <span class="n">I0</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">comp</span> <span class="o">=</span> <span class="n">Compensador</span><span class="p">(</span><span class="n">mag</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">mag</span><span class="o">.</span><span class="n">lamda</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="o">*</span><span class="n">mag</span><span class="o">.</span><span class="n">lamda</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Criando um Objeto Simulacao</span>
+    <span class="n">sim</span> <span class="o">=</span> <span class="n">Simulacao</span><span class="p">(</span><span class="n">mag_x0</span><span class="o">=</span><span class="n">mag</span><span class="o">.</span><span class="n">x0</span><span class="p">)</span>
+
+    <span class="n">grafico</span> <span class="o">=</span> <span class="n">Grafico</span><span class="p">()</span>
+
+    <span class="c1"># Definindo os sinais de referência para rastreamento</span>
+    <span class="k">def</span> <span class="nf">ref_seno</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">mag</span><span class="o">.</span><span class="n">x0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">vp</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">t</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">ref_quad</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">mag</span><span class="o">.</span><span class="n">x0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">vp</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">t</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Função para ajustar coordenadas do modelo às coordenadas do VPython</span>
+    <span class="k">def</span> <span class="nf">converte_posicao</span><span class="p">(</span><span class="n">y_maglev</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">bobina_3</span><span class="o">.</span><span class="n">pos</span> <span class="o">+</span> <span class="n">vp</span><span class="o">.</span><span class="n">vec</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="n">y_maglev</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">*</span><span class="mi">4</span>
+
+    <span class="c1"># Função para implementar ruído gaussiano</span>
+    <span class="k">def</span> <span class="nf">ruido</span><span class="p">(</span><span class="n">amp</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">amp</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">amp</span><span class="p">)</span>
+
+    <span class="c1"># LOOP -------------------------------------------------------------------</span>
+    <span class="c1"># Criando o loop da simulação</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">vp</span><span class="o">.</span><span class="n">rate</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+        <span class="c1"># Verificação da posição do cilindro antes de executar o programa</span>
+        <span class="k">if</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">==</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mf">12e-2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;O cilindro está na posição inicial!&lt;/b&gt;&quot;</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">green</span>
+        <span class="k">elif</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">==</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;Cilindo grudado!&lt;/b&gt;&quot;</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">red</span>
+        <span class="k">elif</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mf">0.08</span> <span class="ow">and</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;O cilindro está na região de equilíbrio!&lt;/b&gt;&quot;</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">cyan</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;O cilindro está fora da região de equilíbrio!&lt;/b&gt;&quot;</span>
+            <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">purple</span>
+
+        <span class="c1"># Acionando o botão executar</span>
+        <span class="k">if</span> <span class="n">sim</span><span class="o">.</span><span class="n">executar</span><span class="p">:</span>
+            <span class="c1"># O primeiro caso: se o cilindro está na posição inicial o</span>
+            <span class="c1"># programa não vai sair da tela inicial.</span>
+            <span class="k">if</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">==</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mf">12e-2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mf">12e-2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">yplot</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">rplot</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="c1"># time.sleep(2)</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">executar</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">sim</span><span class="o">.</span><span class="n">executar</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">bt1_exe</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Executar&quot;</span>
+
+            <span class="c1">#  O segundo caso: o cilindro está grudado no eletroimã,</span>
+            <span class="c1"># tem que aguardar o programa voltar pra tela inicial.</span>
+            <span class="k">elif</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">==</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">executar</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">sim</span><span class="o">.</span><span class="n">executar</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">bt1_exe</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Executar&quot;</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mf">12e-2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+            <span class="c1"># O terceiro caso: o cilindro está na região </span>
+            <span class="c1"># de equilíbrio, logo o programa irá rodar normalmente.</span>
+            <span class="k">elif</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mf">0.08</span> <span class="ow">and</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+
+                <span class="c1"># Atualiza o sinal de referência para enviar para o solver</span>
+                <span class="k">match</span> <span class="n">sim</span><span class="o">.</span><span class="n">M</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+                    <span class="k">case</span> <span class="mi">0</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="k">def</span> <span class="nf">sinal</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                            <span class="k">return</span> <span class="n">ref_seno</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">sl</span><span class="o">.</span><span class="n">value</span><span class="o">*</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">sl2</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+                    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+                        <span class="k">def</span> <span class="nf">sinal</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+                            <span class="k">return</span> <span class="n">ref_quad</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">sl</span><span class="o">.</span><span class="n">value</span><span class="o">*</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">sl2</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+                <span class="c1"># Chama o solver para atualizar os estados do maglev</span>
+                <span class="n">sol</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">Maglev</span><span class="o">.</span><span class="n">estadosmf</span><span class="p">,</span> <span class="n">t_span</span><span class="o">=</span><span class="p">[</span>
+                                <span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="o">+</span><span class="n">sim</span><span class="o">.</span><span class="n">dt</span><span class="p">],</span> <span class="n">y0</span><span class="o">=</span><span class="n">sim</span><span class="o">.</span><span class="n">y</span><span class="p">,</span>
+                                <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">sinal</span><span class="p">,</span> <span class="n">mag</span><span class="p">,</span> <span class="n">comp</span><span class="p">))</span>
+
+                <span class="c1"># Recupera os resultados da simulação</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">sol</span><span class="o">.</span><span class="n">y</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">ruido</span><span class="p">(</span><span class="mf">1e-6</span><span class="p">)</span>
+
+                <span class="c1"># Atualiza os gráficos</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">yplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">sim</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">rplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">sinal</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="n">mag</span><span class="o">.</span><span class="n">x0</span><span class="p">)</span>
+                <span class="c1"># print(y[0])</span>
+
+                <span class="c1"># Atualiza a posição do cilindro</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">converte_posicao</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+                <span class="c1"># Atualiza o tempo</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">t</span> <span class="o">+=</span> <span class="n">sim</span><span class="o">.</span><span class="n">dt</span>
+    <span class="c1"># O quarto caso: o cilindro está fora da região de equilíbrio,</span>
+    <span class="c1"># logo ele irá cair na mesa e retornar a posição inicial.</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">while</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">.</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">:</span>
+                    <span class="n">vp</span><span class="o">.</span><span class="n">rate</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">fps</span><span class="p">)</span>
+                    <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">v</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">v</span><span class="o">+</span><span class="n">sim</span><span class="o">.</span><span class="n">g</span><span class="o">*</span><span class="n">sim</span><span class="o">.</span><span class="n">dt</span>
+                    <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span><span class="o">+</span><span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">v</span><span class="o">*</span><span class="n">sim</span><span class="o">.</span><span class="n">dt</span>
+                    <span class="n">sim</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="o">+</span><span class="n">sim</span><span class="o">.</span><span class="n">dt</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;b&gt;Aguarde o cilindro retonar a posição incial!&lt;/b&gt;&quot;</span>
+                <span class="n">grafico</span><span class="o">.</span><span class="n">legenda_1</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">red</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+                <span class="n">sim</span><span class="o">.</span><span class="n">cil</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">vector</span><span class="p">(</span><span class="mf">12e-2</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5e-2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">sim</span><span class="o">.</span><span class="n">t</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">run_maglev</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="exemplo-aeropendulo">Exemplo Aeropêndulo</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># -----------------------------------------------------</span>
+<span class="c1"># Universidade Federal do Pará</span>
+<span class="c1"># Campus Universitário de Tucuruí</span>
+<span class="c1"># Faculdade de Engenharia Elétrica</span>
+<span class="c1"># -----------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># Laboratório Virtual Sistemas Dinâmicos e Controle</span>
+<span class="c1"># Simulador: Aeropêndulo</span>
+<span class="c1"># Autor: Oséias Farias</span>
+<span class="c1"># Orientadores: Prof. Dr: Raphael Teixeira,</span>
+<span class="c1">#               Prof. Dr: Rafael Bayma</span>
+<span class="c1">#</span>
+<span class="c1"># Data: 2023</span>
+<span class="c1">#  ----------------------------------------------------</span>
+<span class="c1">#</span>
+
+<span class="kn">import</span> <span class="nn">vpython</span> <span class="k">as</span> <span class="nn">vp</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">labvirtual.simulador_aeropendulo</span> <span class="kn">import</span> <span class="p">(</span><span class="n">Graficos</span><span class="p">,</span> <span class="n">AnimacaoAeropendulo</span><span class="p">,</span>
+                                              <span class="n">Interface</span><span class="p">,</span> <span class="n">ModeloMatAeropendulo</span><span class="p">,</span>
+                                              <span class="n">ControladorDiscreto</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">run_aeropendulo</span><span class="p">():</span>
+    <span class="c1"># Instanciando um objeto AeropenduloAaeropendulo()</span>
+    <span class="n">animacao_aeropendulo</span> <span class="o">=</span> <span class="n">AnimacaoAeropendulo</span><span class="p">()</span>
+
+    <span class="c1"># Instanciando um objeto para plotagem dos gráficos dinâmicos dos</span>
+    <span class="c1"># estados do Aeropêndulo</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">Graficos</span><span class="p">()</span>
+    <span class="n">graf</span><span class="p">,</span> <span class="n">plot1</span><span class="p">,</span> <span class="n">plot2</span><span class="p">,</span> <span class="n">plot3</span><span class="p">,</span> <span class="n">plot4</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">graficos</span><span class="p">()</span>
+
+    <span class="c1"># Instânciando um objeto para solução matemática do sistema Aeropêndulo.</span>
+    <span class="n">Km</span> <span class="o">=</span> <span class="mf">0.0296</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mf">0.36</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="mf">0.03</span>
+    <span class="n">J</span> <span class="o">=</span> <span class="mf">0.0106</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="mf">0.0076</span>
+    <span class="n">mma</span> <span class="o">=</span> <span class="n">ModeloMatAeropendulo</span><span class="p">(</span><span class="n">K_m</span><span class="o">=</span><span class="n">Km</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="n">d</span><span class="p">,</span> <span class="n">J</span><span class="o">=</span><span class="n">J</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">c</span><span class="p">)</span>
+
+    <span class="c1"># Instânciando um objeto ControladorDiscreto</span>
+    <span class="n">controlador</span> <span class="o">=</span> <span class="n">ControladorDiscreto</span><span class="p">(</span><span class="n">referencia</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Sinal de controle inicial</span>
+
+    <span class="c1"># Instanciando um objeto Interface</span>
+    <span class="n">interface</span> <span class="o">=</span> <span class="n">Interface</span><span class="p">(</span><span class="n">animacao_aeropendulo</span><span class="p">,</span> <span class="n">controlador</span><span class="p">)</span>
+
+    <span class="n">ts</span> <span class="o">=</span> <span class="mf">1e-2</span>
+    <span class="c1"># Condições Iniciais dos estados</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">t_ant</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+    <span class="c1"># Simulação do Sistema</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">vp</span><span class="o">.</span><span class="n">rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">interface</span><span class="o">.</span><span class="n">EXE</span><span class="p">:</span>
+            <span class="c1"># Calcula as derivadas do sitema</span>
+            <span class="n">dx</span> <span class="o">=</span> <span class="n">mma</span><span class="o">.</span><span class="n">modelo_aeropendulo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">t</span> <span class="o">-</span> <span class="n">t_ant</span>
+
+            <span class="c1"># Atualização dos estados</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">dx</span>
+
+            <span class="c1"># Pega o Ângulo e envia para o controlador</span>
+            <span class="c1"># (Realimentação do sistema)</span>
+            <span class="n">controlador</span><span class="o">.</span><span class="n">set_sensor</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="c1"># O controlador calcula o sinal de controle</span>
+            <span class="n">controlador</span><span class="o">.</span><span class="n">control_pi</span><span class="p">()</span>
+
+            <span class="c1"># Controle proporcional</span>
+            <span class="c1"># controlador.controle_proporcional(kp=10.0)</span>
+            <span class="c1"># pega o sinal de controle calculado e salva na variável u</span>
+            <span class="n">u</span> <span class="o">=</span> <span class="n">controlador</span><span class="o">.</span><span class="n">get_u</span><span class="p">()</span>
+
+            <span class="c1"># Sinal de controle aplicado a entrada do sistema</span>
+            <span class="n">mma</span><span class="o">.</span><span class="n">set_u</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+
+            <span class="c1"># print(x[1]*(180/np.pi))</span>
+            <span class="n">t_ant</span> <span class="o">=</span> <span class="n">t</span>
+            <span class="n">t</span> <span class="o">+=</span> <span class="n">ts</span>
+
+            <span class="c1"># Atualiza o ângulo do Aeropêndulo</span>
+            <span class="n">animacao_aeropendulo</span><span class="o">.</span><span class="n">aeropendulo</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="n">vp</span><span class="o">.</span><span class="n">vec</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                                                    <span class="n">angle</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">ts</span><span class="p">,</span>
+                                                    <span class="n">origin</span><span class="o">=</span><span class="n">vp</span><span class="o">.</span><span class="n">vec</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+            <span class="c1"># Animação da dinâmica da Hélice</span>
+            <span class="n">animacao_aeropendulo</span><span class="o">.</span><span class="n">update_helice</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ts</span><span class="p">)</span>
+
+            <span class="c1"># print(x[1] + interface.valor_angle)</span>
+            <span class="c1"># Gráfico do ângulo.</span>
+            <span class="n">plot1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">interface</span><span class="o">.</span><span class="n">valor_angle</span><span class="p">)</span>
+            <span class="c1"># Gráfico do sinal de referência</span>
+            <span class="n">plot2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">controlador</span><span class="o">.</span><span class="n">r</span> <span class="o">+</span> <span class="n">interface</span><span class="o">.</span><span class="n">valor_angle</span><span class="p">)</span>
+            <span class="c1"># Gráfico da velocidade ângular.</span>
+            <span class="n">plot3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="c1"># Gráfico do sinal de controle</span>
+            <span class="n">plot4</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">run_aeropendulo</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.select", "content.code.annotate"], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.fc8c2696.min.js"></script>
+      
+        <script src="utils/javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
