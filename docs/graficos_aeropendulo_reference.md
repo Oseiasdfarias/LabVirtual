@@ -5,6 +5,5 @@
     options:
         members:
             - graficos
-
         show_root_heading: true
-        show_source: false
+        show_source: true

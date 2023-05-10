@@ -11,6 +11,5 @@
             - set_posicao_helice
             - update_helice
             - __desenhar_pendulo
-
         show_root_heading: true
-        show_source: false
+        show_source: true
