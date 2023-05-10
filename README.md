@@ -23,14 +23,5 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 Sistemas possíveis:
 - 1 - [Maglev](/simulacao_maglev/README.md)
-- 2 - [Pêndulo invertido](/simulacao_pendulo_invertido/README.md) 
-- 3 - pêndulo de múltiplos estágios
 - 4 - [Aeropêndulo](/simulacao_modelagem_aeropendulo/aeropendulo_doc.html)
-- 5 - [Motor DC](/simulacao_motor_dc/README.md)
-- 5 - Massa mola (múltiplas massas)
-- 6 - suspensão de veículo
-- 7 - ball beam
-- 8 - ball plate
-- 9 - drone (precisa mais informação)
-- 10 - Motor DC ou Indução
    
