@@ -22,6 +22,6 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 ## Sistemas de interesse:
 
 Sistemas possíveis:
-- 1 - [Maglev](/simulacao_maglev/README.md)
-- 4 - [Aeropêndulo](/simulacao_modelagem_aeropendulo/aeropendulo_doc.html)
+- 1 - [Maglev](/labvirtual/simulacao_maglev/README.md)
+- 4 - [Aeropêndulo](/labvirtual/simulacao_modelagem_aeropendulo/aeropendulo_doc.html)
    
