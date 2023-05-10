@@ -2,6 +2,8 @@
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 
+# [Documentação](https://oseiasdfarias.github.io/LabVirtual/)
+
 ## Ferramentas do nosso interesse:
 
 - [Python](https://www.python.org/) : Junto com os pacotes [Numpy](https://numpy.org/), [SciPy](https://scipy.org/) e [Matplotlib](https://matplotlib.org/) formam nossa base para programação.
