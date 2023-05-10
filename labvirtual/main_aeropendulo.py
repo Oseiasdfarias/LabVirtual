@@ -62,7 +62,8 @@ def run_aeropendulo():
             # Atualização dos estados
             x = x + dt * dx
 
-            # Pega o Ângulo e envia para o controlador (Realimentação do sistema)
+            # Pega o Ângulo e envia para o controlador
+            # (Realimentação do sistema)
             controlador.set_sensor(x[1])
 
             # O controlador calcula o sinal de controle

@@ -3,7 +3,7 @@ import time
 
 import numpy as np
 from scipy.integrate import solve_ivp
-from vpython import *
+import vpython as vp
 
 # Importando o Modelo Matemático do Maglev
 from simulador_maglev import Maglev
@@ -28,14 +28,14 @@ def run_maglev():
 
     # Definindo os sinais de referência para rastreamento
     def ref_seno(t):
-        return (mag.x0*np.sin(2*pi*t))
+        return (mag.x0*np.sin(2*vp.pi*t))
 
     def ref_quad(t):
-        return (mag.x0)*(np.sin(2*pi*t) >= 0)
+        return (mag.x0)*(np.sin(2*vp.pi*t) >= 0)
 
     # Função para ajustar coordenadas do modelo às coordenadas do VPython
     def converte_posicao(y_maglev):
-        return (sim.bobina_3.pos + vec(0, -y_maglev, 0))*4
+        return (sim.bobina_3.pos + vp.vec(0, -y_maglev, 0))*4
 
     # Função para implementar ruído gaussiano
     def ruido(amp):
@@ -44,26 +44,27 @@ def run_maglev():
     # %% LOOP ------------------------------------------------------------------------------
     # %% Criando o loop da simulação
     while True:
-        rate(sim.fps)
+        vp.rate(sim.fps)
         # %% Verificação da posição do cilindro antes de executar o programa
-        if sim.cil.pos == vector(12e-2, -3.5e-2, 0):
+        if sim.cil.pos == vp.vector(12e-2, -3.5e-2, 0):
             grafico.legenda_1.text = "<b>O cilindro está na posição inicial!</b>"
-            grafico.legenda_1.color = color.green
-        elif sim.cil.pos == vector(0, 0, 0):
+            grafico.legenda_1.color = vp.color.green
+        elif sim.cil.pos == vp.vector(0, 0, 0):
             grafico.legenda_1.text = "<b>Cilindo grudado!</b>"
-            grafico.legenda_1.color = color.red
+            grafico.legenda_1.color = vp.color.red
         elif sim.cil.pos.y <= 0 and sim.cil.pos.y >= -0.08 and sim.cil.pos.x == 0:
             grafico.legenda_1.text = "<b>O cilindro está na região de equilíbrio!</b>"
-            grafico.legenda_1.color = color.cyan
+            grafico.legenda_1.color = vp.color.cyan
         else:
             grafico.legenda_1.text = "<b>O cilindro está fora da região de equilíbrio!</b>"
-            grafico.legenda_1.color = color.purple
+            grafico.legenda_1.color = vp.color.purple
 
         # Acionando o botão executar
         if sim.executar:
-            # %% O primeiro caso: se o cilindro está na posição inicial o programa não vai sair da tela inicial.
-            if sim.cil.pos == vector(12e-2, -3.5e-2, 0):
-                sim.cil.pos = vector(12e-2, -3.5e-2, 0)
+            # O primeiro caso: se o cilindro está na posição inicial o
+            # programa não vai sair da tela inicial.
+            if sim.cil.pos == vp.vector(12e-2, -3.5e-2, 0):
+                sim.cil.pos = vp.vector(12e-2, -3.5e-2, 0)
                 grafico.yplot.delete()
                 grafico.rplot.delete()
                 sim.t = 0
@@ -73,11 +74,11 @@ def run_maglev():
 
             #  O segundo caso: o cilindro está grudado no eletroimã,
             # tem que aguardar o programa voltar pra tela inicial.
-            elif sim.cil.pos == vector(0, 0, 0):
+            elif sim.cil.pos == vp.vector(0, 0, 0):
                 time.sleep(3)
                 sim.executar = not sim.executar
                 sim.bt1_exe.text = "Executar"
-                sim.cil.pos = vector(12e-2, -3.5e-2, 0)
+                sim.cil.pos = vp.vector(12e-2, -3.5e-2, 0)
 
             # O terceiro caso: o cilindro está na região 
             # de equilíbrio, logo o programa irá rodar normalmente.
@@ -86,9 +87,11 @@ def run_maglev():
                 # Atualiza o sinal de referência para enviar para o solver
                 match sim.M.index:
                     case 0 | None:
-                        def sinal(t): return ref_seno(sim.sl.value*sim.t)*(sim.sl2.value)
+                        def sinal(t):
+                            return ref_seno(sim.sl.value*sim.t)*(sim.sl2.value)
                     case 1:
-                        def sinal(t): return ref_quad(sim.sl.value*sim.t)*(sim.sl2.value)
+                        def sinal(t):
+                            return ref_quad(sim.sl.value*sim.t)*(sim.sl2.value)
 
                 # Chama o solver para atualizar os estados do maglev
                 sol = solve_ivp(Maglev.estadosmf, t_span=[
@@ -108,15 +111,19 @@ def run_maglev():
 
                 # Atualiza o tempo
                 sim.t += sim.dt
-    # %% O quarto caso: o cilindro está fora da região de equilíbrio, logo ele irá cair na mesa e retornar a posição inicial.
+    # O quarto caso: o cilindro está fora da região de equilíbrio, logo ele irá cair na mesa e retornar a posição inicial.
             else:
                 while sim.cil.pos.y >= -3.5e-2:
-                    rate(sim.fps)
+                    vp.rate(sim.fps)
                     sim.cil.v = sim.cil.v+sim.g*sim.dt
                     sim.cil.pos = sim.cil.pos+sim.cil.v*sim.dt
                     sim.t = sim.t+sim.dt
                 grafico.legenda_1.text = "<b>Aguarde o cilindro retonar a posição incial!</b>"
-                grafico.legenda_1.color = color.red
+                grafico.legenda_1.color = vp.color.red
                 time.sleep(4)
-                sim.cil.pos = vector(12e-2, -3.5e-2, 0)
+                sim.cil.pos = vp.vector(12e-2, -3.5e-2, 0)
                 print(sim.t)
+
+
+if __name__ == "__main__":
+    run_maglev()
