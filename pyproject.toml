@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "labvirtual"
 version = "0.1.0"
-description = ""
+description = "Biblioteca de simulação gráfica 3D de ambientes para estudo de controle de sistema."
 authors = ["Oseiasdfarias <oseias.dfarias@gmail.com>"]
 readme = "README.md"
 
