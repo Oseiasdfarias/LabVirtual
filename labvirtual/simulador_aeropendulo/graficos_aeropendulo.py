@@ -19,9 +19,9 @@ from typing import Tuple
 
 class Graficos:
     """
-    Gráfico para polagem dos dados dos estados do Aeroèndulo.
+    Gráfico para plotagem dos dados dos estados do Aeropéndulo.
     """
-    def __init__(self, largura=650, altura=400):
+    def __init__(self, largura: int = 650, altura: int = 400):
         self.width = largura
         self.height = altura
 
