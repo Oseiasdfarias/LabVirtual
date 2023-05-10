@@ -6,14 +6,14 @@ from scipy.integrate import solve_ivp
 from vpython import *
 
 # Importando o Modelo Matemático do Maglev
-from modelo_maglev import Maglev
+from labvirtual.simulacao_maglev import Maglev
 
 # Importando o Compensador
-from compensador import Compensador
+from labvirtual.simulacao_maglev import Compensador
 
 # Importando Simulador e Gráfico
-from animacao import Simulacao
-from grafico import Grafico
+from labvirtual.simulacao_maglev import Simulacao
+from labvirtual.simulacao_maglev import Grafico
 
 
 # %% Criação dos objetos da planta e controlador para simular
