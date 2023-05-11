@@ -15,7 +15,49 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 - [vPython](https://vpython.org/) : Simulação 3D;
 
-<br>
+## Contribuintes ✨
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://www.groupsapp.online"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Javier Anton"/><br /><sub><b>Raphael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma" title="Code">⚡</a></td>
+      <td align="center"><a href="https://diamonddevgroup.com"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira" title="Code">⚡</a></td>
+      <td align="center"><a href="https://www.informatica-libera.net/"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias" title="Code">⚡</a></td>
+      <td align="center"><a href="https://www.informatica-libera.net/"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Oséias Farias"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr" title="Code">⚡</a></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+## Instalação da Biblioteca
+
+### Como Instalar?
+Para instalar o LabVirtual você pode usar o pip, conda ou o poetry.
+
+A biblioteca está disponível para ser instalada via o gerenciador de pacotes do python, para instalar basta digitar o comando abaixo em seu terminal.
+
+#### Instalação com o pip
+
+```{.sh}
+pip install labvirtual
+```
+
+#### Instalação com o conda
+
+```{.sh}
+conda install labvirtual
+```
+
+#### Instalação com o poetry
+
+```{.sh}
+poetry add labvirtual
+```
+
 
 ## Conteúdo em desenvolvimento:
 
