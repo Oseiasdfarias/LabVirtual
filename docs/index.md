@@ -86,21 +86,6 @@ Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **ma
 ### Exemplo Maglev
 
 ```python
-# -----------------------------------------------------
-# Universidade Federal do Pará
-# Campus Universitário de Tucuruí
-# Faculdade de Engenharia Elétrica
-# -----------------------------------------------------
-#
-# Laboratório Virtual Sistemas Dinâmicos e Controle
-# Simulador: Maglev
-# Autor: Yuri Cota
-# Orientadores: Prof. Dr: Raphael Teixeira,
-#               Prof. Dr: Rafael Bayma
-#
-# Data: 2023
-#  ----------------------------------------------------
-#
 # Bibliotecas
 import time
 
@@ -120,6 +105,10 @@ from labvirtual.simulador_maglev import Grafico
 
 
 def run_maglev():
+    legenda_1 = "<b>O cilindro está na posição inicial!</b>"
+    legenda_2 = "<b>O cilindro está na região de equilíbrio!</b>"
+    legenda_3 = "<b>O cilindro está fora da região de equilíbrio!</b>"
+    legenda_4 = "<b>Aguarde o cilindro retonar a posição incial!</b>"
     # Criação dos objetos da planta e controlador para simular
     mag = Maglev(m=29e-3, k=9.55e-6, mu=2.19e-3, I0=1)
     comp = Compensador(mag, [-3*mag.lamda]*3, [-8*mag.lamda]*2)
@@ -150,16 +139,17 @@ def run_maglev():
         vp.rate(sim.fps)
         # Verificação da posição do cilindro antes de executar o programa
         if sim.cil.pos == vp.vector(12e-2, -3.5e-2, 0):
-            grafico.legenda_1.text = "<b>O cilindro está na posição inicial!</b>"
+            grafico.legenda_1.text = legenda_1
             grafico.legenda_1.color = vp.color.green
         elif sim.cil.pos == vp.vector(0, 0, 0):
             grafico.legenda_1.text = "<b>Cilindo grudado!</b>"
             grafico.legenda_1.color = vp.color.red
-        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >= -0.08 and sim.cil.pos.x == 0:
-            grafico.legenda_1.text = "<b>O cilindro está na região de equilíbrio!</b>"
+        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >=\
+                -0.08 and sim.cil.pos.x == 0:
+            grafico.legenda_1.text = legenda_2
             grafico.legenda_1.color = vp.color.cyan
         else:
-            grafico.legenda_1.text = "<b>O cilindro está fora da região de equilíbrio!</b>"
+            grafico.legenda_1.text = legenda_3
             grafico.legenda_1.color = vp.color.purple
 
         # Acionando o botão executar
@@ -183,9 +173,10 @@ def run_maglev():
                 sim.bt1_exe.text = "Executar"
                 sim.cil.pos = vp.vector(12e-2, -3.5e-2, 0)
 
-            # O terceiro caso: o cilindro está na região 
+            # O terceiro caso: o cilindro está na região
             # de equilíbrio, logo o programa irá rodar normalmente.
-            elif sim.cil.pos.y <= 0 and sim.cil.pos.y >= -0.08 and sim.cil.pos.x == 0:
+            elif sim.cil.pos.y <= 0 and sim.cil.pos.y >=\
+                    -0.08 and sim.cil.pos.x == 0:
 
                 # Atualiza o sinal de referência para enviar para o solver
                 match sim.M.index:
@@ -193,7 +184,7 @@ def run_maglev():
                         def sinal(t):
                             return ref_seno(sim.sl.value*sim.t)*(sim.sl2.value)
                     case 1:
-                        def sinal(t):
+                        def sinal(t):  # noqa: F811
                             return ref_quad(sim.sl.value*sim.t)*(sim.sl2.value)
 
                 # Chama o solver para atualizar os estados do maglev
@@ -222,7 +213,7 @@ def run_maglev():
                     sim.cil.v = sim.cil.v+sim.g*sim.dt
                     sim.cil.pos = sim.cil.pos+sim.cil.v*sim.dt
                     sim.t = sim.t+sim.dt
-                grafico.legenda_1.text = "<b>Aguarde o cilindro retonar a posição incial!</b>"
+                grafico.legenda_1.text = legenda_4
                 grafico.legenda_1.color = vp.color.red
                 time.sleep(4)
                 sim.cil.pos = vp.vector(12e-2, -3.5e-2, 0)
@@ -231,6 +222,7 @@ def run_maglev():
 
 if __name__ == "__main__":
     run_maglev()
+
 ```
 
 ### Exemplo Aeropêndulo
@@ -243,7 +235,7 @@ if __name__ == "__main__":
 # -----------------------------------------------------
 #
 # Laboratório Virtual Sistemas Dinâmicos e Controle
-# Simulador: Aeropêndulo
+# Tema: Simulação Aeropêndulo
 # Autor: Oséias Farias
 # Orientadores: Prof. Dr: Raphael Teixeira,
 #               Prof. Dr: Rafael Bayma
@@ -254,9 +246,11 @@ if __name__ == "__main__":
 
 import vpython as vp
 import numpy as np
-from labvirtual.simulador_aeropendulo import (Graficos, AnimacaoAeropendulo,
-                                              Interface, ModeloMatAeropendulo,
-                                              ControladorDiscreto)
+from labvirtual.simulador_aeropendulo import (
+    Graficos,
+    AnimacaoAeropendulo,
+    Interface, ModeloMatAeropendulo,
+    ControladorDiscreto)
 
 
 def run_aeropendulo():
@@ -340,4 +334,5 @@ def run_aeropendulo():
 
 if __name__ == "__main__":
     run_aeropendulo()
+
 ```
