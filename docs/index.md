@@ -6,7 +6,6 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 ### [Projeto no GitHub](https://github.com/raphateixeira/LabVirtual/tree/master)
 
-<br>
 
 ## Contribuintes ✨
 
@@ -25,7 +24,6 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
   </tbody>
 </table>
 
-<br>
 
 ## Instalação da Biblioteca
 
@@ -56,8 +54,8 @@ poetry add labvirtual
 ## Sistemas de interesse:
 
 Sistemas possíveis:
-+ 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
 
++ 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
 + 2 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
 
 # Introdução
