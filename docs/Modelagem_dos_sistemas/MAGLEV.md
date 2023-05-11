@@ -111,8 +111,7 @@ Onde:
 
 - $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.</div>
 
-<div align="justify"><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
-
+<span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span>
 
 $$
 \begin{align*}
@@ -123,7 +122,7 @@ $$
 
 <center>**Equação 2.2 e 2.3**</center>
 
-<div align="justify"><span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span></div>
+<span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span>
 
 ---
 
@@ -140,7 +139,7 @@ $$
 <center>**Equação 2.4**</center>
 
 
-<div align="justify"><span style="color:red">É proposta em [15] a utilização da Equação 2.5 para a função $F(x,I)$.</span></div>
+<span style="color:red">É proposta em [15] a utilização da Equação 2.5 para a função $F(x,I)$.</span>
 
 $$
 \begin{align*}
@@ -151,7 +150,7 @@ $$
 <center>**Equação 2.5**</center>
 
 
-<div align="justify"><span style="color:red">Outra forma adequada é dada pela Equação 2.6, que é apresentada em [57].</span></div>
+<span style="color:red">Outra forma adequada é dada pela Equação 2.6, que é apresentada em [57].</span>
 
 $$
 \begin{align*}
@@ -162,15 +161,15 @@ $$
 <center>**Equação 2.6**</center>
 
 
-<div align="justify"><span style="color:red">Onde as constantes $k$ e $\mu$ são características da interação entre o corpo e a bobina. A Equação 5 satisfaz as observaçoes do sistema real, pois a magnitude da força magnética cresce com o aumento da corrente elética, portanto $\partial F/\partial I>0$, e diminuido a medida que o corpo se afasta, admitindo $\partial F/\partial x <0$. Contudo, a Equação 5 é de melhor utilizada na prática, pelo fato da força magnética ser finita para $x=0$.</span></div>
+<span style="color:red">Onde as constantes $k$ e $\mu$ são características da interação entre o corpo e a bobina. A Equação 5 satisfaz as observaçoes do sistema real, pois a magnitude da força magnética cresce com o aumento da corrente elética, portanto $\partial F/\partial I>0$, e diminuido a medida que o corpo se afasta, admitindo $\partial F/\partial x <0$. Contudo, a Equação 5 é de melhor utilizada na prática, pelo fato da força magnética ser finita para $x=0$.</span>
 
 ---
 
 ## **2.3 Ponto de equilíbrio**
 
-<div align="justify"><span style="color:red">Na análise de um sistema dinâmico, é importante identificar seus pontos de equilíbrio, como em estudos de bifurcação e caos [43].</span></div>
+<span style="color:red">Na análise de um sistema dinâmico, é importante identificar seus pontos de equilíbrio, como em estudos de bifurcação e caos [43].</span>
 
-<div align="justify"><span style="color:red">O equilíbrio de um sistema dinâmico, descrito pela equação de estados $\mathbf{\dot{y}=G(y, u)}$, é definido pelos valores $y_0$ e $u_0$ que satisfazem $\dot{y}= 0 = G(y_0,u_0)$, em que: $\mathbf{y} \in R^n$e $\mathbf{u} \in R^p$ (sendo u a entrada do sistema). Ou seja, são pontos cujos valores das variáveis de estado e entrada anulam a dinâmica do sistema. Aplicando esta condição a Equação 2.2 e a Equação 2.3, que se refere as equações de estado do sistema, temos:</span></div>
+<span style="color:red">O equilíbrio de um sistema dinâmico, descrito pela equação de estados $\mathbf{\dot{y}=G(y, u)}$, é definido pelos valores $y_0$ e $u_0$ que satisfazem $\dot{y}= 0 = G(y_0,u_0)$, em que: $\mathbf{y} \in R^n$e $\mathbf{u} \in R^p$ (sendo u a entrada do sistema). Ou seja, são pontos cujos valores das variáveis de estado e entrada anulam a dinâmica do sistema. Aplicando esta condição a Equação 2.2 e a Equação 2.3, que se refere as equações de estado do sistema, temos:</span>
 
 $$
 \begin{align*}
@@ -181,7 +180,7 @@ $$
 <center>**Equação 2.7**</center>
 
 
-<div align="justify"><span style="color:red">Que coincide com a teoria estudada, pois em equilíbrio o corpo estará em repouso. Para a Equação 2.3:</span></div>
+<span style="color:red">Que coincide com a teoria estudada, pois em equilíbrio o corpo estará em repouso. Para a Equação 2.3:</span>
 
 $$
 \begin{align*}
