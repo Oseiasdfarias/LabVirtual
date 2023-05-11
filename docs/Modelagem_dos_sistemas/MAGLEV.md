@@ -1,6 +1,7 @@
 ---
-title: "MAGLEV Simulação"
-author: "Yuri Cota"
+title: MAGLEV Simulação
+author: Yuri Cota
+
 ---
 
 <style>
@@ -20,18 +21,20 @@ author: "Yuri Cota"
        width="80">  
 </div>
 </center>
+
 <center>
-<b>Universidade Federal do Pará</b>
+  <b>Universidade Federal do Pará</b>
 </center>
 <center>
-<b>Campus Universitário de Tucuruí</b>
+  <b>Campus Universitário de Tucuruí</b>
 </center>
 <center>
-<b>Faculdade de Engenharia Elétrica</b>
+  <b>Faculdade de Engenharia Elétrica</b>
 </center>
-<div>
 
 <br>
+
+<div>
 
 <span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
 <br>
