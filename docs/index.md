@@ -9,9 +9,6 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 ## Contribuintes ✨
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 <table>
   <tbody>
     <tr>
@@ -50,7 +47,6 @@ conda install labvirtual
 poetry add labvirtual
 ```
 
-
 ## Sistemas de interesse:
 
 Sistemas possíveis:
@@ -58,9 +54,13 @@ Sistemas possíveis:
 + 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
 + 2 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
 
+<br>
+
 # Introdução
 
 ## Exemplo de uso:
+
+Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **main.py** e copie um dos exemplos abaixo. 
 
 ### Exemplo Maglev
 
