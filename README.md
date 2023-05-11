@@ -1,44 +1,45 @@
-# LabVirtual
+# Documentação Labvirtual
 
 
-
-<div
-class="figure">
+<center>
+<div class="figure" >
   <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
-       width="80">
+       width="80">  
 </div>
+</center>
 
-<b>Universidade Federal do Pará</b>\
-<b>Campus Universitário de Tucuruí</b>\
+<center>
+<b>Universidade Federal do Pará</b>
+</center>
+<center>
+<b>Campus Universitário de Tucuruí</b>
+</center>
+<center>
 <b>Faculdade de Engenharia Elétrica</b>
+</center>
 
 <br>
+
+
+ Link do <a href="https://pypi.org/project/labvirtual/" target="_blank">
+PyPi</a>.
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 
-<br>
-
-# Documentação
-### Para ter acesso a documentação da biblioteca acesse: [Documentação](https://labvirtual.readthedocs.io).
+### <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
+Projeto no GitHub</a>
 
 <br>
-
-## Ferramentas do nosso interesse:
-
-- [Python](https://www.python.org/) : Junto com os pacotes [Numpy](https://numpy.org/), [SciPy](https://scipy.org/) e [Matplotlib](https://matplotlib.org/) formam nossa base para programação.
-
-- [VScode](https://code.visualstudio.com/) : A nossa IDE de programação e interface entre o computador e o GitHub. 
-
-- [vPython](https://vpython.org/) : Simulação 3D;
 
 ## Contribuintes ✨
+
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/rsbayma"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Rafael Bayma"/><br /><sub><b>Rafael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/raphateixeira"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/Oseiasdfarias"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/cotabr"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/rsbayma"  target="_blank"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Rafael Bayma"/><br /><sub><b>Rafael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/raphateixeira"  target="_blank"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/Oseiasdfarias"  target="_blank"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/cotabr"  target="_blank"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr"  target="_blank" title="Code">⚡</a></td>
     </tr>
     
   </tbody>
@@ -70,24 +71,24 @@ conda install labvirtual
 poetry add labvirtual
 ```
 
-
-## Conteúdo em desenvolvimento:
-
-[Simulação de sistema dinâmico com python](Notas\IntegracaoNumerica\ManimEDO.html)
-
-<br>
-
 ## Sistemas de interesse:
 
 Sistemas possíveis:
-- 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
-- 2 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
-   
 
-## Exemplo de uso:
++ 1 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/" target="_blank">
+Maglev</a>
++ 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/" target="_blank">
+Aeropêndulo</a>
+
+<br>
+
+## Introdução
+
+### Exemplo de uso:
+
 Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **main.py** e copie um dos exemplos abaixo. 
 
-### Exemplo Maglev
+#### **Exemplo Maglev**
 
 ```python
 # -----------------------------------------------------
@@ -244,10 +245,7 @@ if __name__ == "__main__":
 
 ```
 
-<br>
-
-### Exemplo Aeropêndulo
-
+#### **Exemplo Aeropêndulo**
 
 ```python
 # -----------------------------------------------------
@@ -336,10 +334,9 @@ def run_aeropendulo():
             t += ts
 
             # Atualiza o ângulo do Aeropêndulo
-            animacao_aeropendulo.aeropendulo.rotate(
-                axis=vp.vec(0, 0, 1),
-                angle=x[0]*ts,
-                origin=vp.vec(0, 5.2, 0))
+            animacao_aeropendulo.aeropendulo.rotate(axis=vp.vec(0, 0, 1),
+                                                    angle=x[0]*ts,
+                                                    origin=vp.vec(0, 5.2, 0))
 
             # Animação da dinâmica da Hélice
             animacao_aeropendulo.update_helice(x[0], ts)
