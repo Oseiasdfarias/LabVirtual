@@ -75,6 +75,7 @@ $$
 m\ddot{x}&=mg-F(x,I)
 \end{align*}
 $$
+
 <center>**Equação 2.1**</center>
 
 
@@ -97,6 +98,7 @@ $$
 \dot{v}&=g-\dfrac{F(x,I)}{m}
 \end{align*}
 $$
+
 <center>**Equação 2.2 e 2.3**</center>
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span></div>
@@ -112,6 +114,7 @@ $$
 F(x,I)&=k\dfrac{I^2}{x^2}
 \end{align*}
 $$
+
 <center>**Equação 2.4**</center>
 
 
@@ -122,6 +125,7 @@ $$
 F(x,I)=kI^2 e^{-x/a}
 \end{align*}
 $$
+
 <center>**Equação 2.5**</center>
 
 
