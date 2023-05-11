@@ -72,8 +72,8 @@ poetry add labvirtual
 
 Sistemas possíveis:
 
-+ 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
-+ 2 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
++ 1 - [Maglev](https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/)
++ 2 - [Aeropêndulo](https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/)
 
 <br>
 
