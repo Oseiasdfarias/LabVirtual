@@ -83,9 +83,24 @@ Sistemas possíveis:
 
 Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **main.py** e copie um dos exemplos abaixo. 
 
-### Exemplo Maglev
+### **Exemplo Maglev**
 
 ```python
+# -----------------------------------------------------
+# Universidade Federal do Pará
+# Campus Universitário de Tucuruí
+# Faculdade de Engenharia Elétrica
+# -----------------------------------------------------
+#
+# Laboratório Virtual Sistemas Dinâmicos e Controle
+# Simulador: Maglev
+# Autor: Yuri Cota
+# Orientadores: Prof. Dr: Raphael Teixeira,
+#               Prof. Dr: Rafael Bayma
+#
+# Data: 2023
+#  ----------------------------------------------------
+#
 # Bibliotecas
 import time
 
@@ -225,7 +240,9 @@ if __name__ == "__main__":
 
 ```
 
-### Exemplo Aeropêndulo
+<br>
+
+### **Exemplo Aeropêndulo**
 
 ```python
 # -----------------------------------------------------
