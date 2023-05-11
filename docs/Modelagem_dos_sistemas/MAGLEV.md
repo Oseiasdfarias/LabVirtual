@@ -79,14 +79,18 @@ Yuri Cota</a>
 
 <div align="justify">Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
 
-<center><figure>
+<!---
+
+<center>
+<figure>
   <img src="C:/Users/Yuri Cota/Documents/MAGLEV_PROJECT/Imagens/Diagrama_força.png"
        alt="Diagrama de forças"
        width="200"
        align="middle">
   <figcaption><b>Figura 1:</b> Diagrama de forças do sistema. </figcaption>
-</figure></center>
-
+</figure>
+</center>
+-->
 
 <div align="justify">Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
 
@@ -107,7 +111,7 @@ $$
 
 - $g$ é a aceleração da gravidade;
 
-- $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.</div>
+- $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.
 
 <div align="justify"><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
 
