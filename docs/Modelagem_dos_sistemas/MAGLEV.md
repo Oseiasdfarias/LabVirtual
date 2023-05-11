@@ -1,9 +1,8 @@
 ---
 title: "MAGLEV Simulação"
 author: "Yuri Cota"
-date: "`r Sys.Date()`"
-output: html_document
 ---
+
 
 <center>
 <div class="figure" >
