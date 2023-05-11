@@ -2,7 +2,10 @@
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 
-# [Documentação](https://oseiasdfarias.github.io/LabVirtual/)
+# Documentação
+### Para ter acesso a documentação da biblioteca acesse: [Documentação](https://labvirtual.readthedocs.io).
+
+<br>
 
 ## Ferramentas do nosso interesse:
 
@@ -10,26 +13,25 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 - [VScode](https://code.visualstudio.com/) : A nossa IDE de programação e interface entre o computador e o GitHub. 
 
-- [Manim](https://www.manim.community/) : Pacote de animação para matemática/ciência/engenharia - Integração com LaTeX.
-
-- [PyMunk](https://www.pymunk.org/en/latest/) :
-
 - [vPython](https://vpython.org/) : Simulação 3D;
 
+<br>
 
 ## Conteúdo em desenvolvimento:
 
 [Simulação de sistema dinâmico com python](Notas\IntegracaoNumerica\ManimEDO.html)
 
+<br>
+
 ## Sistemas de interesse:
 
 Sistemas possíveis:
 - 1 - [Maglev](/labvirtual/simulador_maglev/docs/MAGLEV.html)
-- 4 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
+- 2 - [Aeropêndulo](/labvirtual/simulador_aeropendulo/docs/aeropendulo_doc.html)
    
 
 ## Exemplo de uso:
-
+Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **main.py** e copie um dos exemplos abaixo. 
 
 ### Exemplo Maglev
 
