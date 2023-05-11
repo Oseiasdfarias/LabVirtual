@@ -18,7 +18,7 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
       <td align="center"><a href="https://www.groupsapp.online"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Javier Anton"/><br /><sub><b>Raphael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma" title="Code">⚡</a></td>
       <td align="center"><a href="https://diamonddevgroup.com"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira" title="Code">⚡</a></td>
       <td align="center"><a href="https://www.informatica-libera.net/"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias" title="Code">⚡</a></td>
-      <td align="center"><a href="https://www.informatica-libera.net/"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Oséias Farias"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr" title="Code">⚡</a></td>
+      <td align="center"><a href="https://www.informatica-libera.net/"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr" title="Code">⚡</a></td>
     </tr>
     
   </tbody>
