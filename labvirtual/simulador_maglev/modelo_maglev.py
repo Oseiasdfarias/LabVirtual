@@ -1,9 +1,9 @@
 import numpy as np
 
 
-#  MODELAGEM --------------------------------------------------------------
-# %% Modelagem da Planta do MAGLEV
+#  MODELAGEM -------------------------------------------------
 class Maglev:
+    """Modelagem da Planta do MAGLEV."""
     def __init__(self, m, k, mu, I0):
         self.m = m          # Massa em kg
         self.k = k          # Constante magnética em N m^2/A^2
@@ -21,10 +21,10 @@ class Maglev:
         self.A = np.array([[0, 1.], [self.lamda**2, 0]])
         self.B = np.array([[0], [-self.a]])
         self.C = np.array([[1., 0]])
-    # %% Equações de estados em malha fechada
 
     @staticmethod
     def estadosmf(t, x, ref, planta, comp):
+        """Equações de estados em malha fechada."""
         # Separa os estados do controlador
         z = x[2:]
         # Lista que vai conter os resultados
@@ -41,8 +41,8 @@ class Maglev:
         # Controlador:
         ddt[2:] = comp.Ar@z + comp.Br@u
         return ddt
-    
-    # Função para implementar ruído gaussiano
+
     @staticmethod
     def ruido(amp):
+        """Função para implementar ruído gaussiano."""
         return amp*np.random.normal(loc=0, scale=amp)

@@ -4,6 +4,9 @@ import numpy as np
 
 # %% Projeto do Compensador
 class Compensador:
+    """Classe que implementa o compensador para o sistema
+        de controle por espaço de estados.
+    """
     def __init__(self, planta, P, Q):
 
         # Ordem do sistema
@@ -35,8 +38,10 @@ class Compensador:
     # Definindo os sinais de referência para rastreamento
     @staticmethod
     def ref_seno(t):
+        """Referência senoidal."""
         return (mag.x0*np.sin(2*pi*t))
 
     @staticmethod
     def ref_quad(t):
+        """Referência quadratica."""
         return (mag.x0)*(np.sin(2*pi*t) >= 0)

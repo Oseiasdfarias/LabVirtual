@@ -2,10 +2,15 @@ from vpython import *
 
 
 class Grafico:
+    """
+        Classe que implementa os gráficos do sinal de referência
+        e de saída do sistema.
+    """
     def __init__(self):
-        self.graficos()  
+        self.graficos()
 
     def graficos(self):
+        """Gráficos para plotagem dos sinais do sistema."""
         # Criando o gráfico para mostrar os sinais
         self.grafico = graph(width=700, height=400, align='right',
                              title='Resposta do sistema a um sinal de referência',
@@ -16,7 +21,7 @@ class Grafico:
         # Curva do sinal de referência
         self.rplot = gcurve(color=color.blue, label='Referência')
 
-        # %% Criação da legenda flutuante
+        # Criação da legenda flutuante
 
         self.legenda_1 = label(pos=vec(0, 11.5e-2, 0),
                                text="<b>O cilindro está na posição inicial!</b>",
