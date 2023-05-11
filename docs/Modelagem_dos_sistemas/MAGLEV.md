@@ -340,7 +340,7 @@ $$
 
 ## **Controle**
 
-<div align="justify">Estado do controlador **z**, onde:</div>
+Estado do controlador **z**, onde:
 
 - $z_1$ é a estimativa de $\Lambda x_1$
 - $z_2$ é a estimativa de $\Lambda x_2$
@@ -353,6 +353,7 @@ $$
 \Lambda I &= -\mathbf{K_z}-K_ie
 \end{align*}
 $$
+
 <center>**Equação 2.26**</center>
 
 <div align="justify">Onde $\mathbf{K}$ e $K_i$ são calculados da alocação de pólos com o sistema aumentado:</div>
@@ -363,6 +364,7 @@ $$
   \mathbf{B}_a &= \left[\begin{array}{c} \mathbf{B} \\ \mathbf{0}\end{array}\right]
 \end{align*}
 $$
+
 <center>**Equação 2.26, 2.27**</center>
 
 <div align="justify">O controlador final possui duas entradas: a variação da saída do sistema (para o controlador poder trabalhar linearizado) e o sinal de referência.</div>
@@ -372,6 +374,7 @@ $$
   \mathbf{u} &= \left[\begin{array}{c} \Delta x_1 \\ r\end{array}\right]
 \end{align*}
 $$
+
 <center>**Equação 2.28**</center>
 
 <div align="justify">Colocando o observador, então, o compensador completo pode ser implantado usando as seguintes equações de estado:</div>
