@@ -77,13 +77,13 @@ Sistemas possíveis:
 
 <br>
 
-# Introdução
+## Introdução
 
-## Exemplo de uso:
+### Exemplo de uso:
 
 Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **main.py** e copie um dos exemplos abaixo. 
 
-### **Exemplo Maglev**
+#### **Exemplo Maglev**
 
 ```python
 # -----------------------------------------------------
@@ -240,9 +240,7 @@ if __name__ == "__main__":
 
 ```
 
-<br>
-
-### **Exemplo Aeropêndulo**
+#### **Exemplo Aeropêndulo**
 
 ```python
 # -----------------------------------------------------
