@@ -36,7 +36,7 @@ Projeto no GitHub</a>.
 
 <br>
 
-## Contribuintes ✨
+## **Membros** ✨
 
 <table>
   <tbody>
@@ -46,7 +46,6 @@ Projeto no GitHub</a>.
       <td align="center"><a href="https://github.com/Oseiasdfarias"  target="_blank"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias"  target="_blank" title="Code">⚡</a></td>
       <td align="center"><a href="https://github.com/cotabr"  target="_blank"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr"  target="_blank" title="Code">⚡</a></td>
     </tr>
-    
   </tbody>
 </table>
 

@@ -29,11 +29,9 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 ### <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
 Projeto no GitHub</a>
 
-<br>
-
 <center>
 
-## Contribuintes ✨
+## **Membros** ✨
 
 <table>
   <tbody>
