@@ -356,7 +356,7 @@ $$
 
 <center>**Equação 2.26**</center>
 
-<div align="justify">Onde $\mathbf{K}$ e $K_i$ são calculados da alocação de pólos com o sistema aumentado:</div>
+<div align="justify">Onde $$\mathbf{K}$$ e $$K_i$$ são calculados da alocação de pólos com o sistema aumentado:</div>
 
 $$
 \begin{align*}
