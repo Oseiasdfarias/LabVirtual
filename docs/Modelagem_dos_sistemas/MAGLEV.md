@@ -3,6 +3,16 @@ title: "MAGLEV Simulação"
 author: "Yuri Cota"
 ---
 
+<style>
+        .tab {
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .tab1 {
+            display: inline-block;
+            margin-left: 80px;
+        }
+</style>
 
 <center>
 <div class="figure" >
@@ -10,7 +20,6 @@ author: "Yuri Cota"
        width="80">  
 </div>
 </center>
-
 <center>
 <b>Universidade Federal do Pará</b>
 </center>
@@ -25,18 +34,18 @@ author: "Yuri Cota"
 <br>
 
 <span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
-
+<br>
 <span class="tab"></span><b>Título:</b>: Simulação Gráfica do Maglev com a Biblioteca <b>VPython</b>
-
+<br>
 <span class="tab"></span><b>Autor:</b><a href="https://github.com/cotabr" target="_blank">
 Yuri Cota</a>
-
+<br>
 <span class="tab"></span><b>Orientadores:</b>
-
+<br>
 <span class="tab1"></span>Prof. Dr: Raphael Teixeira
-
+<br>
 <span class="tab1"></span>Prof. Dr: Rafael Bayma
-
+<br>
 </div>
 
 <br>
