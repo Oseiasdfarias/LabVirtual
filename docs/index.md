@@ -1,5 +1,26 @@
 # Documentação Labvirtual
 
+
+<center>
+<div class="figure" >
+  <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
+       width="80">  
+</div>
+</center>
+
+<center>
+<b>Universidade Federal do Pará</b>
+</center>
+<center>
+<b>Campus Universitário de Tucuruí</b>
+</center>
+<center>
+<b>Faculdade de Engenharia Elétrica</b>
+</center>
+
+<br>
+
+
  Link do [PyPi](https://pypi.org/project/labvirtual/).
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
