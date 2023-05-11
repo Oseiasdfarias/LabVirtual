@@ -21,22 +21,25 @@
 <br>
 
 
- Link do [PyPi](https://pypi.org/project/labvirtual/).
+ Link do <a href="https://pypi.org/project/labvirtual/" target="_blank">
+PyPi</a>.
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 
-### [Projeto no GitHub](https://github.com/raphateixeira/LabVirtual/tree/master)
+### <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
+Projeto no GitHub</a>
 
+<br>
 
 ## Contribuintes ✨
 
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/rsbayma"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Rafael Bayma"/><br /><sub><b>Rafael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/raphateixeira"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/Oseiasdfarias"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias" title="Code">⚡</a></td>
-      <td align="center"><a href="https://github.com/cotabr"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/rsbayma"  target="_blank"><img src="https://avatars.githubusercontent.com/u/122168383?v=4?s=100" width="100px;" alt="Rafael Bayma"/><br /><sub><b>Rafael Bayma</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=rsbayma"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/raphateixeira"  target="_blank"><img src="https://avatars.githubusercontent.com/u/13009893?v=4?s=100" width="100px;" alt="Raphael"/><br /><sub><b>Raphael Teixeira</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=raphateixeira"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/Oseiasdfarias"  target="_blank"><img src="https://avatars.githubusercontent.com/u/52744236" width="100px;" alt="Oséias Farias"/><br /><sub><b>Oséias Farias</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=Oseiasdfarias"  target="_blank" title="Code">⚡</a></td>
+      <td align="center"><a href="https://github.com/cotabr"  target="_blank"><img src="https://avatars.githubusercontent.com/u/104999958" width="100px;" alt="Yuri Cota"/><br /><sub><b>Yuri Cota</b></sub></a><br /><a href="https://github.com/raphateixeira/LabVirtual/commits?author=cotabr"  target="_blank" title="Code">⚡</a></td>
     </tr>
     
   </tbody>
@@ -72,8 +75,10 @@ poetry add labvirtual
 
 Sistemas possíveis:
 
-+ 1 - [Maglev](https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/)
-+ 2 - [Aeropêndulo](https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/)
++ 1 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/" target="_blank">
+Maglev</a>
++ 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/" target="_blank">
+Aeropêndulo</a>
 
 <br>
 
