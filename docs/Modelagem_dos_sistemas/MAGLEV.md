@@ -50,7 +50,7 @@ Yuri Cota</a>
 
 <br>
 
-# **1. INTRODUÇÃO**
+## **1. INTRODUÇÃO**
 <!---
 *Escopo geral sobre a simulação, animação, ferramentas de ensino, etc.*
 -->
@@ -67,13 +67,13 @@ Yuri Cota</a>
 
 ---
 
-# **2. REFERENCIAL TÉORICO**
+## **2. REFERENCIAL TÉORICO**
 
 <!---
 *Modelagem do MAGLEV, aspectos gerais de simulação e animação.*
 -->
 
-## **2.1 Diagrama de forças**
+### **2.1 Diagrama de forças**
 
 <div align="justify">A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
 
@@ -129,7 +129,7 @@ $$
 
 ---
 
-## **2.2 Força magnética**
+### **2.2 Força magnética**
 
 <div align="justify"><span style="color:red">A formulação clássica para forças magnéticas é dada pela Equação 2.4, entretanto ela possui limitações, pois quando $ x \rightarrow 0 \Rightarrow F(x,I) \rightarrow \infty$, que não pode ser observado na prática.</span></div>
 
@@ -168,7 +168,7 @@ $$
 
 ---
 
-## **2.3 Ponto de equilíbrio**
+### **2.3 Ponto de equilíbrio**
 
 <div align="justify"><span style="color:red">Na análise de um sistema dinâmico, é importante identificar seus pontos de equilíbrio, como em estudos de bifurcação e caos [43].</span></div>
 
@@ -204,7 +204,7 @@ $$
 
 ---
 
-## **2.4 Linearização do sistema MAGLEV**
+### **2.4 Linearização do sistema MAGLEV**
 
 <div align="justify"><span style="color:red">A linearização é feita através da expansão em série de Taylor [46] dos termos não-lineares da equação diferencial $\mathbf{\dot{y} = G(y,u)}$ em torno do ponto de operação. A Equação 2.9 apresenta uma forma generalizada para a série de Taylor de uma função vetorial. Para se obter a aproximação linear trunca-se a série no segundo termo.</span></div>
 
@@ -268,7 +268,7 @@ $$
 
 ---
 
-## **2.5 Função de Transferência**
+### **2.5 Função de Transferência**
 
 <div align="justify"><span style="color:red">A função de transferência de um sistema representado por uma equação diferencial linear invariante no tempo é definida como a relação entre a transformada de Laplace da saída e a transformada de Laplace da entrada, admitindo-se todas as condições iniciais nulas [46, 45].</span></div>
 
@@ -294,7 +294,7 @@ $$
 
 ---
 
-## **2.6 Amplificador**
+### **2.6 Amplificador**
 
 <div align="justify">Um amplificador é necessário na saída do sistema do levitador magnético para amplificar o sinal de controle e permitir que a bobina do levitador gere uma força magnética suficientemente forte para levitar o objeto.O princípio de funcionamento do levitador magnético é baseado na Lei de Lenz, que afirma que uma corrente elétrica induz uma força magnética oposta. Portanto, para criar uma força magnética suficiente para levitar um objeto, uma corrente elétrica precisa ser aplicada à bobina do levitador.</div>
 
@@ -314,7 +314,7 @@ $$
 
 ---
 
-## **2.7 Sensor Ótico**
+### **2.7 Sensor Ótico**
 
 <div align="justify">Neste trabalho será utilizado um sensor ótico que foi estudado e modelado por [511]. Como a posição for a saída do sensor e em Volts, vamos usar  $y=f(x)$ , onde  $f$  é a função do sensor. De acordo com [511], temos a Equação 2.24 para a região no intervalo entre 0 a 9,7 mm, que apresenta variações suaves de tensão em relação à posição.</div>
 
@@ -338,7 +338,7 @@ $$
 
 ---
 
-## **Controle**
+### **Controle**
 
 Estado do controlador **z**, onde:
 
@@ -400,7 +400,7 @@ $$
 
 ---
 
-# **METODOLOGIA**
+## **METODOLOGIA**
 
 *Pacotes e códigos utilizados*
 
@@ -427,13 +427,13 @@ Vpython: <https://vpython.org/>
 <div align="justify">Além disso, existem vários tutoriais e exemplos disponíveis on-line que podem ajudar na implementação do código Python e na criação da animação em vpython.</div>
 
 
-# **RESULTADOS**
+## **RESULTADOS**
 
 *Discussão do programa, algoritmos, tutorial de como usar, etc.*
 
-# **CONCLUSÃO**
+## **CONCLUSÃO**
 
-# **REFERÊNCIAS**
+## **REFERÊNCIAS**
 
 Referências:
 [1] D. C. Lee, B. J. Kim, and J. H. Jeon, "Modeling and linear control of a maglev system using optimal state-feedback control," Journal of Intelligent & Robotic Systems, vol. 80, pp. 375–391, 2015.
