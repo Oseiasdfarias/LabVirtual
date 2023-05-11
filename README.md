@@ -1,7 +1,5 @@
 # Documentação Labvirtual
 
-
-
 <div class="figure" >
   <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
        width="80">  
@@ -23,6 +21,8 @@
 PyPi</a>.
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
+
+## [Documentação da Biblioteca](https://labvirtual.readthedocs.io)
 
 ### <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
 Projeto no GitHub</a>
