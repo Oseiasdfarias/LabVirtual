@@ -1,23 +1,21 @@
 # Documentação Labvirtual
 
 
-<center>
+
 <div class="figure" >
   <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
        width="80">  
 </div>
-</center>
 
-<center>
+<br>
+
 <b>Universidade Federal do Pará</b>
-</center>
-<center>
+<br>
 <b>Campus Universitário de Tucuruí</b>
-</center>
-<center>
+<br>
 <b>Faculdade de Engenharia Elétrica</b>
-</center>
 
+<br>
 <br>
 
 
