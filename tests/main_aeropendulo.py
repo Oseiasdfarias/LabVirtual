@@ -16,9 +16,11 @@
 
 import vpython as vp
 import numpy as np
-from labvirtual.simulador_aeropendulo import (Graficos, AnimacaoAeropendulo,
-                                              Interface, ModeloMatAeropendulo,
-                                              ControladorDiscreto)
+from labvirtual.simulador_aeropendulo import (
+    Graficos,
+    AnimacaoAeropendulo,
+    Interface, ModeloMatAeropendulo,
+    ControladorDiscreto)
 
 
 def run_aeropendulo():
