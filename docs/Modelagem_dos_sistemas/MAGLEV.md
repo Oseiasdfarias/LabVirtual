@@ -78,9 +78,9 @@ Por fim, discutiremos algumas limitações e desafios associados ao uso do levit
 
 ## **2.1 Diagrama de forças**
 
-<div align="justify">A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
+A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.
 
-<div align="justify">Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
+Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.
 
 <center><figure>
   <img src="C:/Users/Yuri Cota/Documents/MAGLEV_PROJECT/Imagens/Diagrama_força.png"
@@ -90,8 +90,7 @@ Por fim, discutiremos algumas limitações e desafios associados ao uso do levit
   <figcaption><b>Figura 1:</b> Diagrama de forças do sistema. </figcaption>
 </figure></center>
 
-
-<div align="justify">Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
+Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.
 
 $$
 \begin{align*}
@@ -102,7 +101,7 @@ $$
 <center>**Equação 2.1**</center>
 
 
-<div align="justify">Onde:</div>
+Onde:
 
 - $m$ é massa do corpo;
 
