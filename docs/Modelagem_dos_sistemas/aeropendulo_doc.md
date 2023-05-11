@@ -36,7 +36,6 @@ author: Oséias Farias
 <br>
 
 <div>
-
 <span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
 <br>
 <span class="tab"></span><b>Título:</b>: Simulação Gráfica do Aeropêndulo com a Biblioteca <b>VPython</b>
@@ -53,7 +52,6 @@ Oséias Farias</a>
 </div>
 
 <br>
-
 
 ## Demostração Simulador
 

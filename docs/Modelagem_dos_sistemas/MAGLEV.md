@@ -54,11 +54,8 @@ Yuri Cota</a>
 <br>
 
 # **1. INTRODUÇÃO**
-<!---
-*Escopo geral sobre a simulação, animação, ferramentas de ensino, etc.*
--->
 
-<div align="justify">Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.</div>
+Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.
 
 <div align="justify">A modelagem do levitador magnético pode ser feita através de uma abordagem de espaço de estados, que é uma técnica matemática utilizada para representar sistemas dinâmicos em termos de variáveis de estado e entradas. Esta foi a técnica utilizada no trabalho, e com ela é possível descrever as dinâmicas do sistema em termos de equações diferenciais lineares e obter uma representação matricial do modelo. Também exploraremos os princípios físicos por trás do levitador magnético, incluindo a lei de Faraday, a lei de Lenz e o efeito Meissner, entre outros. A compreensão desses princípios é fundamental para entender como o levitador funciona e como ele pode ser aplicado em diversas áreas, como na indústria automotiva, na medicina e na pesquisa científica.</div>
 
