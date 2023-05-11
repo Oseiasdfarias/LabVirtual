@@ -1,9 +1,17 @@
 ---
-title: "**MAGLEV Simulação**"
+title: "MAGLEV Simulação"
 author: "Yuri Cota"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+
+<center>
+<div class="figure" >
+  <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
+       width="80">  
+</div>
+</center>
+
 <div>
 
 <span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
@@ -51,7 +59,7 @@ Yuri Cota</a>
 <div align="justify"><p style="text-indent: 50px;">A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
 
 <div align="justify"><p style="text-indent: 50px;">Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
-\
+
 <center><figure>
   <img src="C:/Users/Yuri Cota/Documents/MAGLEV_PROJECT/Imagens/Diagrama_força.png"
        alt="Diagrama de forças"
@@ -59,7 +67,7 @@ Yuri Cota</a>
        align="middle">
   <figcaption><b>Figura 1:</b> Diagrama de forças do sistema. </figcaption>
 </figure></center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;">Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
 
@@ -69,7 +77,7 @@ m\ddot{x}&=mg-F(x,I)
 \end{align*}
 $$
 <center>**Equação 2.1**</center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;">Onde:</div>
 
@@ -83,6 +91,7 @@ $$
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
 
+
 $$
 \begin{align*}
 \dot{x}&=v \\
@@ -90,14 +99,14 @@ $$
 \end{align*}
 $$
 <center>**Equação 2.2 e 2.3**</center>
-\
+
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span></div>
 
 ---
 
 ## **2.2 Força magnética**
 
-<div align="justify"><p style="text-indent: 50px;"><span style="color:red">A formulação clássica para forças magnéticas é dada pela Equação 2.4, entretanto ela possui limitações, pois quando $x \rightarrow 0 \Rightarrow F(x,I) \rightarrow \infty$, que não pode ser observado na prática.</span></div>
+<div align="justify"><p style="text-indent: 50px;"><span style="color:red">A formulação clássica para forças magnéticas é dada pela Equação 2.4, entretanto ela possui limitações, pois quando $ x \rightarrow 0 \Rightarrow F(x,I) \rightarrow \infty$, que não pode ser observado na prática.</span></div>
 
 $$
 \begin{align*}
@@ -105,7 +114,7 @@ F(x,I)&=k\dfrac{I^2}{x^2}
 \end{align*}
 $$
 <center>**Equação 2.4**</center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">É proposta em [15] a utilização da Equação 2.5 para a função $F(x,I)$.</span></div>
 
@@ -115,7 +124,7 @@ F(x,I)=kI^2 e^{-x/a}
 \end{align*}
 $$
 <center>**Equação 2.5**</center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Outra forma adequada é dada pela Equação 2.6, que é apresentada em [57].</span></div>
 
@@ -126,7 +135,7 @@ F(x,I)=k\dfrac{I^2}{(x+\mu)^2}
 $$
 
 <center>**Equação 2.6**</center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Onde as constantes $k$ e $\mu$ são características da interação entre o corpo e a bobina. A Equação 5 satisfaz as observaçoes do sistema real, pois a magnitude da força magnética cresce com o aumento da corrente elética, portanto $\partial F/\partial I>0$, e diminuido a medida que o corpo se afasta, admitindo $\partial F/\partial x <0$. Contudo, a Equação 5 é de melhor utilizada na prática, pelo fato da força magnética ser finita para $x=0$.</span></div>
 
@@ -145,7 +154,7 @@ $$
 $$
 
 <center>**Equação 2.7**</center>
-\
+
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Que coincide com a teoria estudada, pois em equilíbrio o corpo estará em repouso. Para a Equação 2.3:</span></div>
 
@@ -155,7 +164,6 @@ $$
 \end{align*}
 $$
 
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Demonstrando que o equilíbrio do sistema ocorre quando a força peso se iguala a força magnética, para um determinado ponto de operação ($x_0,I_0$). Substituindo a Equação 2.6 na Equação 2.3, podemos achar a corrente de equilíbrio $I_0$ ou posição de equilíbrio do sistema $x_0$.</span></div>
 
@@ -166,7 +174,6 @@ mg &= g-\dfrac{kI_0^2}{m(x_0-\mu)^2}
 $$
 
 <center>**Equação 2.8**</center>
-\
 
 ---
 
@@ -181,7 +188,6 @@ $$
 $$
 
 <center>**Equação 2.9**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Se for desprezada a influência dos termos de ordem superior, $\delta$, pode-se aproximar a equação não-linear $\mathbf{G(y,u)}$ pela Equação 2.10.</span></div>
 
@@ -192,7 +198,6 @@ $$
 $$
 
 <center>**Equação 2.10**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Onde:</span></div>
 
@@ -207,7 +212,6 @@ $$
 $$
 
 <center>**Equação 2.11, 2.12, 2.13, 2.14, 2.15**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Onde os termos $\mathbf{A}$ e $\mathbf{B}$ da Equação 2.11, 2.14 e 2.15, são geralmente utilizados para determinar os estados de um sistema linear invariante no tempo [46]. A notação $\mathbf{\partial G / \partial y}$ significa matriz jacobiana.</span></div>
 
@@ -221,7 +225,6 @@ $$
 $$
 
 <center>**Equação 2.16, 2.17**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">Em que $\lambda$ e $k_0$ foram adotados apenas como forma de simplificar a Equação 2.17, de modo que o termo quadrático ($\lambda^2$) surge após as interações das derivadas quando se lineariza a Equação 2.3, onde:</span></div>
 
@@ -233,7 +236,6 @@ k_0 &= -\dfrac{1}{m}\dfrac{\partial F(x_0, I_0)}{\partial I}
 $$
 
 <center>**Equação 2.18, 2.19**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">As Equações 2.16 e 2.17, são equações de estado linearizadas do sistema MAGLEV em torno do ponto de operação (x_0,I_0). Através delas é possível obter a função de transferência, analisar estabilidade e projetar controladores.</span></div>
 
@@ -254,7 +256,6 @@ s \Delta V(s) &= \lambda^2 \Delta X(s)+k_0 \Delta I(s)\\
 $$
 
 <center>**Equação 2.20, 2.21, 2.22**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;"><span style="color:red">A razão entre a saída e a entrada do sistema é dada pela Equação 2.22, que representa a função de transferência genérica do sistema MAGLEV.</span></div>
 
@@ -279,7 +280,6 @@ I &= Gv
 $$
 
 <center>**Equação 2.23**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">Onde $G$ é o ganho do amplificador.</div>
 
@@ -298,7 +298,6 @@ v_1(x)=0,609e^{0,16x}+1,1341\times 10^{-9}\times e^{2,128x};\;0\leq x <9,7
 $$
 
 <center>**Equação 2.24**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">Já para a Equação 2.25, a região correspondente ao intervalo entre 9,7 mm a 10,6 mm, apresenta grande variações de tensão em relação à posição.</div>
 
@@ -309,7 +308,6 @@ v_2(x)=\dfrac{16,1}{1+e^{-9(x-10,07)}}+3,425;\;9,7\leq x <10,6
 $$
 
 <center>**Equação 2.25**</center>
-\
 
 ---
 
@@ -329,7 +327,6 @@ $$
 \end{align*}
 $$
 <center>**Equação 2.26**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">Onde $\mathbf{K}$ e $K_i$ são calculados da alocação de pólos com o sistema aumentado:</div>
 
@@ -340,7 +337,6 @@ $$
 \end{align*}
 $$
 <center>**Equação 2.26, 2.27**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">O controlador final possui duas entradas: a variação da saída do sistema (para o controlador poder trabalhar linearizado) e o sinal de referência.</div>
 
@@ -350,7 +346,6 @@ $$
 \end{align*}
 $$
 <center>**Equação 2.28**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">Colocando o observador, então, o compensador completo pode ser implantado usando as seguintes equações de estado:</div>
 
@@ -361,7 +356,6 @@ $$
 $$
 
 <center>**Equação 2.29**</center>
-\
 
 <div align="justify"><p style="text-indent: 50px;">Onde as matrizes do controlador são:</div>
 
@@ -373,7 +367,6 @@ $$
 $$
 
 <center>**Equação 2.30, 2.31**</center>
-\
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Simulação Gráfica do Aeropêndulo com a Biblioteca **VPython**
+title: Simulação Gráfica do Aeropêndulo com a Biblioteca VPython
 author: Oséias Farias
 
 ---
