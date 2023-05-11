@@ -1,6 +1,6 @@
 ---
-title: MAGLEV Simulação"
-author: "Yuri Cota"
+title: MAGLEV Simulação
+author: Yuri Cota
 ---
 
 <style>
