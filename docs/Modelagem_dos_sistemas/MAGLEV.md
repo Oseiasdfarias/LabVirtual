@@ -35,15 +35,15 @@ Yuri Cota</a>
 *Escopo geral sobre a simulação, animação, ferramentas de ensino, etc.*
 -->
 
-<div align="justify">Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.</div>
+Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.
 
-<div align="justify">A modelagem do levitador magnético pode ser feita através de uma abordagem de espaço de estados, que é uma técnica matemática utilizada para representar sistemas dinâmicos em termos de variáveis de estado e entradas. Esta foi a técnica utilizada no trabalho, e com ela é possível descrever as dinâmicas do sistema em termos de equações diferenciais lineares e obter uma representação matricial do modelo. Também exploraremos os princípios físicos por trás do levitador magnético, incluindo a lei de Faraday, a lei de Lenz e o efeito Meissner, entre outros. A compreensão desses princípios é fundamental para entender como o levitador funciona e como ele pode ser aplicado em diversas áreas, como na indústria automotiva, na medicina e na pesquisa científica.</div>
+A modelagem do levitador magnético pode ser feita através de uma abordagem de espaço de estados, que é uma técnica matemática utilizada para representar sistemas dinâmicos em termos de variáveis de estado e entradas. Esta foi a técnica utilizada no trabalho, e com ela é possível descrever as dinâmicas do sistema em termos de equações diferenciais lineares e obter uma representação matricial do modelo. Também exploraremos os princípios físicos por trás do levitador magnético, incluindo a lei de Faraday, a lei de Lenz e o efeito Meissner, entre outros. A compreensão desses princípios é fundamental para entender como o levitador funciona e como ele pode ser aplicado em diversas áreas, como na indústria automotiva, na medicina e na pesquisa científica.
 
-<div align="justify">Ao simular o levitador magnético usando Python, esperamos tornar o assunto mais acessível e compreensível para os alunos de engenharia, especialmente aqueles que ainda estão iniciando seus estudos na área de eletrônica e magnetismo. Além disso, a simulação permite que os alunos experimentem diferentes configurações do levitador e observem como as variações dos parâmetros afetam seu comportamento. Para simular o comportamento do levitador, foi aplicado a linguagem de programação Python juntamente com as bibliotecas numpy e control. Com essas bibliotecas, é possível realizar a simulação numérica do modelo do levitador magnético e obter resultados de desempenho, tais como a resposta transiente e a estabilidade do sistema.</div>
+Ao simular o levitador magnético usando Python, esperamos tornar o assunto mais acessível e compreensível para os alunos de engenharia, especialmente aqueles que ainda estão iniciando seus estudos na área de eletrônica e magnetismo. Além disso, a simulação permite que os alunos experimentem diferentes configurações do levitador e observem como as variações dos parâmetros afetam seu comportamento. Para simular o comportamento do levitador, foi aplicado a linguagem de programação Python juntamente com as bibliotecas numpy e control. Com essas bibliotecas, é possível realizar a simulação numérica do modelo do levitador magnético e obter resultados de desempenho, tais como a resposta transiente e a estabilidade do sistema.
 
-<div align="justify">Além disso, foi construido uma animação do levitador magnético utilizando a biblioteca vpython, que é uma biblioteca de gráficos 3D em tempo real. Com essa ferramenta, é possível visualizar a dinâmica do sistema em tempo real e entender melhor como as forças magnéticas atuam para manter o objeto levitando no ar. A animação pode ser uma ferramenta de ensino poderosa para ilustrar conceitos físicos de forma visual e interativa.</div>
+Além disso, foi construido uma animação do levitador magnético utilizando a biblioteca vpython, que é uma biblioteca de gráficos 3D em tempo real. Com essa ferramenta, é possível visualizar a dinâmica do sistema em tempo real e entender melhor como as forças magnéticas atuam para manter o objeto levitando no ar. A animação pode ser uma ferramenta de ensino poderosa para ilustrar conceitos físicos de forma visual e interativa.
 
-<div align="justify">Por fim, discutiremos algumas limitações e desafios associados ao uso do levitador magnético, bem como possíveis soluções para superá-los. Com isso, esperamos que os alunos possam ter uma visão mais completa e crítica dessa tecnologia e possam aplicá-la de forma eficaz em suas futuras carreiras na engenharia.</div>
+Por fim, discutiremos algumas limitações e desafios associados ao uso do levitador magnético, bem como possíveis soluções para superá-los. Com isso, esperamos que os alunos possam ter uma visão mais completa e crítica dessa tecnologia e possam aplicá-la de forma eficaz em suas futuras carreiras na engenharia.
 
 ---
 
@@ -55,9 +55,9 @@ Yuri Cota</a>
 
 ## **2.1 Diagrama de forças**
 
-<div align="justify">A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
+A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.
 
-<div align="justify">Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
+Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.
 
 <center><figure>
   <img src="C:/Users/Yuri Cota/Documents/MAGLEV_PROJECT/Imagens/Diagrama_força.png"
@@ -68,7 +68,7 @@ Yuri Cota</a>
 </figure></center>
 
 
-<div align="justify">Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
+Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.
 
 $$
 \begin{align*}
@@ -79,7 +79,7 @@ $$
 <center>**Equação 2.1**</center>
 
 
-<div align="justify"><p>Onde:</div>
+Onde:
 
 - $m$ é massa do corpo;
 
@@ -87,9 +87,9 @@ $$
 
 - $g$ é a aceleração da gravidade;
 
-- $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.</div>
+- $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.
 
-<div align="justify"><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
+<span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span>
 
 
 $$
