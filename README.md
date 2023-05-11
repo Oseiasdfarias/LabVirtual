@@ -14,18 +14,25 @@
 <b>Faculdade de Engenharia Elétrica</b>
 
 <br>
-<br>
-
 
  Link do <a href="https://pypi.org/project/labvirtual/" target="_blank">
 PyPi</a>.
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 
-## [Documentação da Biblioteca](https://labvirtual.readthedocs.io)
+<br>
 
-### <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
-Projeto no GitHub</a>
+## Documentação da Biblioteca
+Para ter acesso a documentação da biblioteca acesse: 
+<a href="https://labvirtual.readthedocs.io" target="_blank">
+Documentação Labvirtual</a>
+
+<br>
+
+## Projeto no GitHub
+
+Link do  <a href="https://github.com/raphateixeira/LabVirtual/tree/master" target="_blank">
+Projeto no GitHub</a>.
 
 <br>
 

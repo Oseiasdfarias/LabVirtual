@@ -75,9 +75,9 @@ poetry add labvirtual
 
 Sistemas possíveis:
 
-+ 1 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/" target="_blank">
++ 1 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/MAGLEV/">
 Maglev</a>
-+ 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/" target="_blank">
++ 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/">
 Aeropêndulo</a>
 
 <br>
