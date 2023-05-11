@@ -35,15 +35,15 @@ Yuri Cota</a>
 *Escopo geral sobre a simulação, animação, ferramentas de ensino, etc.*
 -->
 
-<div align="justify"><p>Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.</p></div>
+<div align="justify">Os ambientes virtuais são ferramentas cada vez mais utilizadas no ensino da engenharia, trazendo diversos benefícios para os estudantes e professores. Eles permitem simulações e experimentações que, muitas vezes, não seriam possíveis em um ambiente físico, além de possibilitar a conexão com alunos e professores de diversas partes do mundo. Neste trabalho, vamos apresentar a simulação do levitador magnético, um dispositivo que utiliza campos magnéticos para levitar objetos, através da ferramenta computacional Python. Além de apresentar o comportamento do levitador, também abordaremos as principais aplicações dessa tecnologia e suas vantagens em relação a outros métodos de levitação, como os baseados em ar comprimido ou forças mecânicas.</div>
 
-<div align="justify"><p>A modelagem do levitador magnético pode ser feita através de uma abordagem de espaço de estados, que é uma técnica matemática utilizada para representar sistemas dinâmicos em termos de variáveis de estado e entradas. Esta foi a técnica utilizada no trabalho, e com ela é possível descrever as dinâmicas do sistema em termos de equações diferenciais lineares e obter uma representação matricial do modelo. Também exploraremos os princípios físicos por trás do levitador magnético, incluindo a lei de Faraday, a lei de Lenz e o efeito Meissner, entre outros. A compreensão desses princípios é fundamental para entender como o levitador funciona e como ele pode ser aplicado em diversas áreas, como na indústria automotiva, na medicina e na pesquisa científica.</p></div>
+<div align="justify">A modelagem do levitador magnético pode ser feita através de uma abordagem de espaço de estados, que é uma técnica matemática utilizada para representar sistemas dinâmicos em termos de variáveis de estado e entradas. Esta foi a técnica utilizada no trabalho, e com ela é possível descrever as dinâmicas do sistema em termos de equações diferenciais lineares e obter uma representação matricial do modelo. Também exploraremos os princípios físicos por trás do levitador magnético, incluindo a lei de Faraday, a lei de Lenz e o efeito Meissner, entre outros. A compreensão desses princípios é fundamental para entender como o levitador funciona e como ele pode ser aplicado em diversas áreas, como na indústria automotiva, na medicina e na pesquisa científica.</div>
 
-<div align="justify"><p>Ao simular o levitador magnético usando Python, esperamos tornar o assunto mais acessível e compreensível para os alunos de engenharia, especialmente aqueles que ainda estão iniciando seus estudos na área de eletrônica e magnetismo. Além disso, a simulação permite que os alunos experimentem diferentes configurações do levitador e observem como as variações dos parâmetros afetam seu comportamento. Para simular o comportamento do levitador, foi aplicado a linguagem de programação Python juntamente com as bibliotecas numpy e control. Com essas bibliotecas, é possível realizar a simulação numérica do modelo do levitador magnético e obter resultados de desempenho, tais como a resposta transiente e a estabilidade do sistema.</p></div>
+<div align="justify">Ao simular o levitador magnético usando Python, esperamos tornar o assunto mais acessível e compreensível para os alunos de engenharia, especialmente aqueles que ainda estão iniciando seus estudos na área de eletrônica e magnetismo. Além disso, a simulação permite que os alunos experimentem diferentes configurações do levitador e observem como as variações dos parâmetros afetam seu comportamento. Para simular o comportamento do levitador, foi aplicado a linguagem de programação Python juntamente com as bibliotecas numpy e control. Com essas bibliotecas, é possível realizar a simulação numérica do modelo do levitador magnético e obter resultados de desempenho, tais como a resposta transiente e a estabilidade do sistema.</div>
 
-<div align="justify"><p>Além disso, foi construido uma animação do levitador magnético utilizando a biblioteca vpython, que é uma biblioteca de gráficos 3D em tempo real. Com essa ferramenta, é possível visualizar a dinâmica do sistema em tempo real e entender melhor como as forças magnéticas atuam para manter o objeto levitando no ar. A animação pode ser uma ferramenta de ensino poderosa para ilustrar conceitos físicos de forma visual e interativa.</p></div>
+<div align="justify">Além disso, foi construido uma animação do levitador magnético utilizando a biblioteca vpython, que é uma biblioteca de gráficos 3D em tempo real. Com essa ferramenta, é possível visualizar a dinâmica do sistema em tempo real e entender melhor como as forças magnéticas atuam para manter o objeto levitando no ar. A animação pode ser uma ferramenta de ensino poderosa para ilustrar conceitos físicos de forma visual e interativa.</div>
 
-<div align="justify"><p>Por fim, discutiremos algumas limitações e desafios associados ao uso do levitador magnético, bem como possíveis soluções para superá-los. Com isso, esperamos que os alunos possam ter uma visão mais completa e crítica dessa tecnologia e possam aplicá-la de forma eficaz em suas futuras carreiras na engenharia.</p></div>
+<div align="justify">Por fim, discutiremos algumas limitações e desafios associados ao uso do levitador magnético, bem como possíveis soluções para superá-los. Com isso, esperamos que os alunos possam ter uma visão mais completa e crítica dessa tecnologia e possam aplicá-la de forma eficaz em suas futuras carreiras na engenharia.</div>
 
 ---
 
@@ -55,9 +55,9 @@ Yuri Cota</a>
 
 ## **2.1 Diagrama de forças**
 
-<div align="justify"><p>A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
+<div align="justify">A modelagem do levitador magnético é baseada nas leis da dinâmica e requer uma análise cuidadosa dos sistemas de força que atuam sobre o corpo. Identificar as forças aplicadas é fundamental para a modelagem, reduzindo-se o sistema ao centro de massa do corpo e simplificando a análise de suas equações de movimento.</div>
 
-<div align="justify"><p>Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
+<div align="justify">Este sistema apresenta um grau de liberdade, movimentando-se apenas na direção vertical. Suas equações dinâmicas são determinadas a partir da aplicação da segunda lei de Newton ao sistema de forças, o que resulta em um conjunto de equações que possibilita estabelecer o comportamento dinâmico do sistema, conforme a Figura 1.</div>
 
 <center><figure>
   <img src="C:/Users/Yuri Cota/Documents/MAGLEV_PROJECT/Imagens/Diagrama_força.png"
@@ -68,7 +68,7 @@ Yuri Cota</a>
 </figure></center>
 
 
-<div align="justify"><p>Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
+<div align="justify">Um ponto importante é que o modelo é dito geral sob a ótica de não especificar uma função para a força magnética. Sua determinação pode ser dividida em duas etapas: a análise do diagrama de forças do sistema e a análise da força magnética. É necessário entender como a força magnética interage com as outras forças do sistema para conseguir um modelo completo e preciso. A Equação 2.1 resulta da análise do sistema de forças, por convenção o tempo $t$ será omitido da equação.</div>
 
 $$
 \begin{align*}
@@ -89,7 +89,7 @@ $$
 
 - $F(x,I)$ é a força de interação magnética entre o imã e a massa, função da distância $x$ e da intensidade de corrente elétrica $I$.</div>
 
-<div align="justify"><p><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
+<div align="justify"><span style="color:red">Através da inclusão da variável velocidade $v$ podemos dividir a Equação 1 em duas equações de primeira ordem, obtendo assim a Equação 2.2 e Equação 2.3.</span></div>
 
 
 $$
@@ -101,13 +101,13 @@ $$
 
 <center>**Equação 2.2 e 2.3**</center>
 
-<div align="justify"><p><span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span></div>
+<div align="justify"><span style="color:red">Estas equações descrevem o modelo, em variáveis de estado, do processo MAGLEV.</span></div>
 
 ---
 
 ## **2.2 Força magnética**
 
-<div align="justify"><p><span style="color:red">A formulação clássica para forças magnéticas é dada pela Equação 2.4, entretanto ela possui limitações, pois quando $ x \rightarrow 0 \Rightarrow F(x,I) \rightarrow \infty$, que não pode ser observado na prática.</span></div>
+<div align="justify"><span style="color:red">A formulação clássica para forças magnéticas é dada pela Equação 2.4, entretanto ela possui limitações, pois quando $ x \rightarrow 0 \Rightarrow F(x,I) \rightarrow \infty$, que não pode ser observado na prática.</span></div>
 
 $$
 \begin{align*}
@@ -118,7 +118,7 @@ $$
 <center>**Equação 2.4**</center>
 
 
-<div align="justify"><p><span style="color:red">É proposta em [15] a utilização da Equação 2.5 para a função $F(x,I)$.</span></div>
+<div align="justify"><span style="color:red">É proposta em [15] a utilização da Equação 2.5 para a função $F(x,I)$.</span></div>
 
 $$
 \begin{align*}
@@ -129,7 +129,7 @@ $$
 <center>**Equação 2.5**</center>
 
 
-<div align="justify"><p><span style="color:red">Outra forma adequada é dada pela Equação 2.6, que é apresentada em [57].</span></div>
+<div align="justify"><span style="color:red">Outra forma adequada é dada pela Equação 2.6, que é apresentada em [57].</span></div>
 
 $$
 \begin{align*}
@@ -140,15 +140,15 @@ $$
 <center>**Equação 2.6**</center>
 
 
-<div align="justify"><p><span style="color:red">Onde as constantes $k$ e $\mu$ são características da interação entre o corpo e a bobina. A Equação 5 satisfaz as observaçoes do sistema real, pois a magnitude da força magnética cresce com o aumento da corrente elética, portanto $\partial F/\partial I>0$, e diminuido a medida que o corpo se afasta, admitindo $\partial F/\partial x <0$. Contudo, a Equação 5 é de melhor utilizada na prática, pelo fato da força magnética ser finita para $x=0$.</span></div>
+<div align="justify"><span style="color:red">Onde as constantes $k$ e $\mu$ são características da interação entre o corpo e a bobina. A Equação 5 satisfaz as observaçoes do sistema real, pois a magnitude da força magnética cresce com o aumento da corrente elética, portanto $\partial F/\partial I>0$, e diminuido a medida que o corpo se afasta, admitindo $\partial F/\partial x <0$. Contudo, a Equação 5 é de melhor utilizada na prática, pelo fato da força magnética ser finita para $x=0$.</span></div>
 
 ---
 
 ## **2.3 Ponto de equilíbrio**
 
-<div align="justify"><p><span style="color:red">Na análise de um sistema dinâmico, é importante identificar seus pontos de equilíbrio, como em estudos de bifurcação e caos [43].</span></div>
+<div align="justify"><span style="color:red">Na análise de um sistema dinâmico, é importante identificar seus pontos de equilíbrio, como em estudos de bifurcação e caos [43].</span></div>
 
-<div align="justify"><p><span style="color:red">O equilíbrio de um sistema dinâmico, descrito pela equação de estados $\mathbf{\dot{y}=G(y, u)}$, é definido pelos valores $y_0$ e $u_0$ que satisfazem $\dot{y}= 0 = G(y_0,u_0)$, em que: $\mathbf{y} \in R^n$e $\mathbf{u} \in R^p$ (sendo u a entrada do sistema). Ou seja, são pontos cujos valores das variáveis de estado e entrada anulam a dinâmica do sistema. Aplicando esta condição a Equação 2.2 e a Equação 2.3, que se refere as equações de estado do sistema, temos:</span></div>
+<div align="justify"><span style="color:red">O equilíbrio de um sistema dinâmico, descrito pela equação de estados $\mathbf{\dot{y}=G(y, u)}$, é definido pelos valores $y_0$ e $u_0$ que satisfazem $\dot{y}= 0 = G(y_0,u_0)$, em que: $\mathbf{y} \in R^n$e $\mathbf{u} \in R^p$ (sendo u a entrada do sistema). Ou seja, são pontos cujos valores das variáveis de estado e entrada anulam a dinâmica do sistema. Aplicando esta condição a Equação 2.2 e a Equação 2.3, que se refere as equações de estado do sistema, temos:</span></div>
 
 $$
 \begin{align*}
@@ -159,7 +159,7 @@ $$
 <center>**Equação 2.7**</center>
 
 
-<div align="justify"><p><span style="color:red">Que coincide com a teoria estudada, pois em equilíbrio o corpo estará em repouso. Para a Equação 2.3:</span></div>
+<div align="justify"><span style="color:red">Que coincide com a teoria estudada, pois em equilíbrio o corpo estará em repouso. Para a Equação 2.3:</span></div>
 
 $$
 \begin{align*}
@@ -168,7 +168,7 @@ $$
 $$
 
 
-<div align="justify"><p><span style="color:red">Demonstrando que o equilíbrio do sistema ocorre quando a força peso se iguala a força magnética, para um determinado ponto de operação ($x_0,I_0$). Substituindo a Equação 2.6 na Equação 2.3, podemos achar a corrente de equilíbrio $I_0$ ou posição de equilíbrio do sistema $x_0$.</span></div>
+<div align="justify"><span style="color:red">Demonstrando que o equilíbrio do sistema ocorre quando a força peso se iguala a força magnética, para um determinado ponto de operação ($x_0,I_0$). Substituindo a Equação 2.6 na Equação 2.3, podemos achar a corrente de equilíbrio $I_0$ ou posição de equilíbrio do sistema $x_0$.</span></div>
 
 $$
 \begin{align*}
@@ -182,7 +182,7 @@ $$
 
 ## **2.4 Linearização do sistema MAGLEV**
 
-<div align="justify"><p><span style="color:red">A linearização é feita através da expansão em série de Taylor [46] dos termos não-lineares da equação diferencial $\mathbf{\dot{y} = G(y,u)}$ em torno do ponto de operação. A Equação 2.9 apresenta uma forma generalizada para a série de Taylor de uma função vetorial. Para se obter a aproximação linear trunca-se a série no segundo termo.</span></div>
+<div align="justify"><span style="color:red">A linearização é feita através da expansão em série de Taylor [46] dos termos não-lineares da equação diferencial $\mathbf{\dot{y} = G(y,u)}$ em torno do ponto de operação. A Equação 2.9 apresenta uma forma generalizada para a série de Taylor de uma função vetorial. Para se obter a aproximação linear trunca-se a série no segundo termo.</span></div>
 
 $$
 \begin{align*}
@@ -192,7 +192,7 @@ $$
 
 <center>**Equação 2.9**</center>
 
-<div align="justify"><p><span style="color:red">Se for desprezada a influência dos termos de ordem superior, $\delta$, pode-se aproximar a equação não-linear $\mathbf{G(y,u)}$ pela Equação 2.10.</span></div>
+<div align="justify"><span style="color:red">Se for desprezada a influência dos termos de ordem superior, $\delta$, pode-se aproximar a equação não-linear $\mathbf{G(y,u)}$ pela Equação 2.10.</span></div>
 
 $$
 \begin{align*}
@@ -202,7 +202,7 @@ $$
 
 <center>**Equação 2.10**</center>
 
-<div align="justify"><p><span style="color:red">Onde:</span></div>
+<div align="justify"><span style="color:red">Onde:</span></div>
 
 $$
 \begin{align*}
@@ -216,9 +216,9 @@ $$
 
 <center>**Equação 2.11, 2.12, 2.13, 2.14, 2.15**</center>
 
-<div align="justify"><p><span style="color:red">Onde os termos $\mathbf{A}$ e $\mathbf{B}$ da Equação 2.11, 2.14 e 2.15, são geralmente utilizados para determinar os estados de um sistema linear invariante no tempo [46]. A notação $\mathbf{\partial G / \partial y}$ significa matriz jacobiana.</span></div>
+<div align="justify"><span style="color:red">Onde os termos $\mathbf{A}$ e $\mathbf{B}$ da Equação 2.11, 2.14 e 2.15, são geralmente utilizados para determinar os estados de um sistema linear invariante no tempo [46]. A notação $\mathbf{\partial G / \partial y}$ significa matriz jacobiana.</span></div>
 
-<div align="justify"><p><span style="color:red">Empregando a série de Taylor ao modelo do MAGLEV na Equação 2.2 e 2.3, e admitindo $(x_0,I_0)$ como valores de equilíbrio de posição e corrente, obtém-se:</span></div>
+<div align="justify"><span style="color:red">Empregando a série de Taylor ao modelo do MAGLEV na Equação 2.2 e 2.3, e admitindo $(x_0,I_0)$ como valores de equilíbrio de posição e corrente, obtém-se:</span></div>
 
 $$
 \begin{align*}
@@ -229,7 +229,7 @@ $$
 
 <center>**Equação 2.16, 2.17**</center>
 
-<div align="justify"><p><span style="color:red">Em que $\lambda$ e $k_0$ foram adotados apenas como forma de simplificar a Equação 2.17, de modo que o termo quadrático ($\lambda^2$) surge após as interações das derivadas quando se lineariza a Equação 2.3, onde:</span></div>
+<div align="justify"><span style="color:red">Em que $\lambda$ e $k_0$ foram adotados apenas como forma de simplificar a Equação 2.17, de modo que o termo quadrático ($\lambda^2$) surge após as interações das derivadas quando se lineariza a Equação 2.3, onde:</span></div>
 
 $$
 \begin{align*}
@@ -240,15 +240,15 @@ $$
 
 <center>**Equação 2.18, 2.19**</center>
 
-<div align="justify"><p><span style="color:red">As Equações 2.16 e 2.17, são equações de estado linearizadas do sistema MAGLEV em torno do ponto de operação (x_0,I_0). Através delas é possível obter a função de transferência, analisar estabilidade e projetar controladores.</span></div>
+<div align="justify"><span style="color:red">As Equações 2.16 e 2.17, são equações de estado linearizadas do sistema MAGLEV em torno do ponto de operação (x_0,I_0). Através delas é possível obter a função de transferência, analisar estabilidade e projetar controladores.</span></div>
 
 ---
 
 ## **2.5 Função de Transferência**
 
-<div align="justify"><p><span style="color:red">A função de transferência de um sistema representado por uma equação diferencial linear invariante no tempo é definida como a relação entre a transformada de Laplace da saída e a transformada de Laplace da entrada, admitindo-se todas as condições iniciais nulas [46, 45].</span></div>
+<div align="justify"><span style="color:red">A função de transferência de um sistema representado por uma equação diferencial linear invariante no tempo é definida como a relação entre a transformada de Laplace da saída e a transformada de Laplace da entrada, admitindo-se todas as condições iniciais nulas [46, 45].</span></div>
 
-<div align="justify"><p><span style="color:red">Dessa forma, aplicando a transformada de Laplace a Equação 2.16 e Equação 2.17:</span></div>
+<div align="justify"><span style="color:red">Dessa forma, aplicando a transformada de Laplace a Equação 2.16 e Equação 2.17:</span></div>
 
 $$
 \begin{align*}
@@ -260,21 +260,21 @@ $$
 
 <center>**Equação 2.20, 2.21, 2.22**</center>
 
-<div align="justify"><p><span style="color:red">A razão entre a saída e a entrada do sistema é dada pela Equação 2.22, que representa a função de transferência genérica do sistema MAGLEV.</span></div>
+<div align="justify"><span style="color:red">A razão entre a saída e a entrada do sistema é dada pela Equação 2.22, que representa a função de transferência genérica do sistema MAGLEV.</span></div>
 
-<div align="justify"><p><span style="color:red">O modelo linear da Equação 2.22 é geral, sob o ponto de vista de não atribuir uma forma especificapara a força magnética $F(x,I)$.</span></div>
+<div align="justify"><span style="color:red">O modelo linear da Equação 2.22 é geral, sob o ponto de vista de não atribuir uma forma especificapara a força magnética $F(x,I)$.</span></div>
 
-<div align="justify"><p><span style="color:red">Para o sistema operando em regime permanente, um aumento da corrente $I$ causa uma diminuição da posição $x$, comprovando que o sinal negativo de $k_0$, da Equação 2.19, é aplicável. Esta relação entre as variáveis, $x$ e $I$, sugere uma realimentação positiva à malha do sistema, além de um sinal de referência negativo.</span></div>
+<div align="justify"><span style="color:red">Para o sistema operando em regime permanente, um aumento da corrente $I$ causa uma diminuição da posição $x$, comprovando que o sinal negativo de $k_0$, da Equação 2.19, é aplicável. Esta relação entre as variáveis, $x$ e $I$, sugere uma realimentação positiva à malha do sistema, além de um sinal de referência negativo.</span></div>
 
-<div align="justify"><p><span style="color:red">É também correto afirmar que a Equação 2.22 possui pólos reais e distintos em $\pm \lambda$, pois admitiu-se que $\partial F/ \partial x < 0$. A disposição dos pólos apresenta simetria, em relação ao eixo imaginário, comprovando a instabilidade do sistema. Além disso, o arranjo dos pólos pode sugerir a função de transferência do controlador.</span></div>
+<div align="justify"><span style="color:red">É também correto afirmar que a Equação 2.22 possui pólos reais e distintos em $\pm \lambda$, pois admitiu-se que $\partial F/ \partial x < 0$. A disposição dos pólos apresenta simetria, em relação ao eixo imaginário, comprovando a instabilidade do sistema. Além disso, o arranjo dos pólos pode sugerir a função de transferência do controlador.</span></div>
 
 ---
 
 ## **2.6 Amplificador**
 
-<div align="justify"><p>Um amplificador é necessário na saída do sistema do levitador magnético para amplificar o sinal de controle e permitir que a bobina do levitador gere uma força magnética suficientemente forte para levitar o objeto.O princípio de funcionamento do levitador magnético é baseado na Lei de Lenz, que afirma que uma corrente elétrica induz uma força magnética oposta. Portanto, para criar uma força magnética suficiente para levitar um objeto, uma corrente elétrica precisa ser aplicada à bobina do levitador.</div>
+<div align="justify">Um amplificador é necessário na saída do sistema do levitador magnético para amplificar o sinal de controle e permitir que a bobina do levitador gere uma força magnética suficientemente forte para levitar o objeto.O princípio de funcionamento do levitador magnético é baseado na Lei de Lenz, que afirma que uma corrente elétrica induz uma força magnética oposta. Portanto, para criar uma força magnética suficiente para levitar um objeto, uma corrente elétrica precisa ser aplicada à bobina do levitador.</div>
 
-<div align="justify"><p>O amplificador é usado para amplificar o sinal de controle gerado pelo circuito de controle do levitador. O sinal de controle é geralmente uma tensão de baixa amplitude, que precisa ser amplificado para gerar uma corrente elétrica suficiente para criar a força magnética necessária para levitar o objeto. Além disso, o amplificador também é usado para controlar a fase da corrente elétrica aplicada à bobina do levitador, o que é importante para manter a estabilidade do sistema e evitar oscilações indesejadas. Se a entrada for tensão, deve ser utilizada a Equação 2.23:</div>
+<div align="justify">O amplificador é usado para amplificar o sinal de controle gerado pelo circuito de controle do levitador. O sinal de controle é geralmente uma tensão de baixa amplitude, que precisa ser amplificado para gerar uma corrente elétrica suficiente para criar a força magnética necessária para levitar o objeto. Além disso, o amplificador também é usado para controlar a fase da corrente elétrica aplicada à bobina do levitador, o que é importante para manter a estabilidade do sistema e evitar oscilações indesejadas. Se a entrada for tensão, deve ser utilizada a Equação 2.23:</div>
 
 $$
 \begin{align*}
@@ -284,15 +284,15 @@ $$
 
 <center>**Equação 2.23**</center>
 
-<div align="justify"><p>Onde $G$ é o ganho do amplificador.</div>
+<div align="justify">Onde $G$ é o ganho do amplificador.</div>
 
-<div align="justify"><p>Em resumo, o amplificador é fundamental para garantir que o sistema do levitador magnético possa gerar uma força magnética suficientemente forte e controlável para levitar o objeto de forma estável e precisa.</div>
+<div align="justify">Em resumo, o amplificador é fundamental para garantir que o sistema do levitador magnético possa gerar uma força magnética suficientemente forte e controlável para levitar o objeto de forma estável e precisa.</div>
 
 ---
 
 ## **2.7 Sensor Ótico**
 
-<div align="justify"><p>Neste trabalho será utilizado um sensor ótico que foi estudado e modelado por [511]. Como a posição for a saída do sensor e em Volts, vamos usar  $y=f(x)$ , onde  $f$  é a função do sensor. De acordo com [511], temos a Equação 2.24 para a região no intervalo entre 0 a 9,7 mm, que apresenta variações suaves de tensão em relação à posição.</div>
+<div align="justify">Neste trabalho será utilizado um sensor ótico que foi estudado e modelado por [511]. Como a posição for a saída do sensor e em Volts, vamos usar  $y=f(x)$ , onde  $f$  é a função do sensor. De acordo com [511], temos a Equação 2.24 para a região no intervalo entre 0 a 9,7 mm, que apresenta variações suaves de tensão em relação à posição.</div>
 
 $$
 \begin{align*}
@@ -302,7 +302,7 @@ $$
 
 <center>**Equação 2.24**</center>
 
-<div align="justify"><p>Já para a Equação 2.25, a região correspondente ao intervalo entre 9,7 mm a 10,6 mm, apresenta grande variações de tensão em relação à posição.</div>
+<div align="justify">Já para a Equação 2.25, a região correspondente ao intervalo entre 9,7 mm a 10,6 mm, apresenta grande variações de tensão em relação à posição.</div>
 
 $$
 \begin{align*}
@@ -316,13 +316,13 @@ $$
 
 ## **Controle**
 
-<div align="justify"><p>Estado do controlador **z**, onde:</div>
+<div align="justify">Estado do controlador **z**, onde:</div>
 
 - $z_1$ é a estimativa de $\Lambda x_1$
 - $z_2$ é a estimativa de $\Lambda x_2$
 - $e$ é o estado do integrador
 
-<div align="justify"><p>O sinal de controle é calculado pela Equação 2.26.</div>
+<div align="justify">O sinal de controle é calculado pela Equação 2.26.</div>
 
 $$
 \begin{align*}
@@ -331,7 +331,7 @@ $$
 $$
 <center>**Equação 2.26**</center>
 
-<div align="justify"><p>Onde $\mathbf{K}$ e $K_i$ são calculados da alocação de pólos com o sistema aumentado:</div>
+<div align="justify">Onde $\mathbf{K}$ e $K_i$ são calculados da alocação de pólos com o sistema aumentado:</div>
 
 $$
 \begin{align*}
@@ -341,7 +341,7 @@ $$
 $$
 <center>**Equação 2.26, 2.27**</center>
 
-<div align="justify"><p>O controlador final possui duas entradas: a variação da saída do sistema (para o controlador poder trabalhar linearizado) e o sinal de referência.</div>
+<div align="justify">O controlador final possui duas entradas: a variação da saída do sistema (para o controlador poder trabalhar linearizado) e o sinal de referência.</div>
 
 $$
 \begin{align*}
@@ -350,7 +350,7 @@ $$
 $$
 <center>**Equação 2.28**</center>
 
-<div align="justify"><p>Colocando o observador, então, o compensador completo pode ser implantado usando as seguintes equações de estado:</div>
+<div align="justify">Colocando o observador, então, o compensador completo pode ser implantado usando as seguintes equações de estado:</div>
 
 $$
 \begin{align*}
@@ -360,7 +360,7 @@ $$
 
 <center>**Equação 2.29**</center>
 
-<div align="justify"><p>Onde as matrizes do controlador são:</div>
+<div align="justify">Onde as matrizes do controlador são:</div>
 
 $$
 \begin{align*}
