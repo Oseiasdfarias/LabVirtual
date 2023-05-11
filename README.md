@@ -1,5 +1,3 @@
-# Documentação Labvirtual
-
 <div class="figure" >
   <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
        width="80">  
