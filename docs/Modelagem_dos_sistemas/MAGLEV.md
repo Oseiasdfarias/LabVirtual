@@ -11,7 +11,18 @@ author: "Yuri Cota"
 </div>
 </center>
 
+<center>
+<b>Universidade Federal do Pará</b>
+</center>
+<center>
+<b>Campus Universitário de Tucuruí</b>
+</center>
+<center>
+<b>Faculdade de Engenharia Elétrica</b>
+</center>
 <div>
+
+<br>
 
 <span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
 
