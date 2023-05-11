@@ -18,8 +18,8 @@ author: Oséias Farias
 
 <center>
 <div class="figure" >
-  <img src="utils/logoufpa.png"
-       width="90">  
+  <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/pipy_v1/utils/image.png?raw=true"
+       width="80">  
 </div>
 </center>
 
@@ -35,13 +35,22 @@ author: Oséias Farias
 
 <br>
 
-<span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle\
-<span class="tab"></span><b>Título:</b>: Simulação Gráfica do Aeropêndulo com a Biblioteca <b>VPython</b>\
+<div>
+
+<span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
+
+<span class="tab"></span><b>Título:</b>: Simulação Gráfica do Aeropêndulo com a Biblioteca <b>VPython</b>
+
 <span class="tab"></span><b>Autor:</b><a href="https://github.com/Oseiasdfarias" target="_blank">
-Oséias Farias</a>\
-<span class="tab"></span><b>Orientadores:</b>\
-<span class="tab1"></span>Prof. Dr: Raphael Teixeira\
+Oséias Farias</a>
+
+<span class="tab"></span><b>Orientadores:</b>
+
+<span class="tab1"></span>Prof. Dr: Raphael Teixeira
+
 <span class="tab1"></span>Prof. Dr: Rafael Bayma
+
+</div>
 
 <br>
 
@@ -61,7 +70,7 @@ Oséias Farias</a>\
 
 <center>
 <div class="figure" >
-  <img src="utils/sistema_aeropendulo_malha_fechada.svg"
+  <img src="https://raw.githubusercontent.com/Oseiasdfarias/LabVirtual/e7b96ffe1f3381815025208252b203828a532819/simulacao_modelagem_aeropendulo/utils/sistema_aeropendulo_malha_fechada.svg"
        width="900">  
   <p>Figura 1 - Diagrama de blocos do Sistema em Malha Fechada.</p>
 </div>
@@ -73,7 +82,7 @@ Oséias Farias</a>\
 
 <center>
 <div class="figure" >
-  <img src="utils/simulacao.png"
+  <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/dev/simulacao_modelagem_aeropendulo/utils/simulacao.png?raw=true"
        width="900">  
   <p>Figura 2 - Animação do aeropêndulo usando a biblioteca vpython.</p>
 </div>
@@ -106,7 +115,7 @@ Oséias Farias</a>\
 
 <center>
 <div class="figure" >
-  <img src="utils/aeropendulo_1.png"
+  <img src="https://github.com/Oseiasdfarias/LabVirtual/blob/dev/simulacao_modelagem_aeropendulo/utils/aeropendulo_1.png?raw=true"
        width="40%"> 
   <p>Figura 4 - Diagrama esquemático do Aeropêndulo.</p>
 </div>
@@ -134,7 +143,7 @@ $$
 
 <center>
 <div class="figure" >
-  <img src="utils/diagrama_bloco_aeropendulo_nao_linear.svg"
+  <img src="https://raw.githubusercontent.com/Oseiasdfarias/LabVirtual/e7b96ffe1f3381815025208252b203828a532819/simulacao_modelagem_aeropendulo/utils/diagrama_bloco_aeropendulo_nao_linear.svg"
        width="90%"> 
   <p>Figura 5 - Diagrama de blocos do modelo do Aeropêndulo.</p>
 </div>
@@ -404,7 +413,7 @@ plt.show()
 
 <center>
 <div class="figure" >
-  <img src="utils/simu_malha_aberta.svg"
+  <img src="https://raw.githubusercontent.com/Oseiasdfarias/LabVirtual/e7b96ffe1f3381815025208252b203828a532819/simulacao_modelagem_aeropendulo/utils/simu_malha_aberta.svg"
        width="800"> 
 </div>
 </center>
@@ -421,7 +430,7 @@ plt.show()
 
 <center>
 <div class="figure" >
-  <img src="utils/sistema_aeropendulo_malha_fechada.svg"
+  <img src="https://raw.githubusercontent.com/Oseiasdfarias/LabVirtual/e7b96ffe1f3381815025208252b203828a532819/simulacao_modelagem_aeropendulo/utils/sistema_aeropendulo_malha_fechada.svg"
        width="90%"> 
   <p>Figura 6 - Diagrama de blocos do Sistema em Malha Fechada.</p>
 </div>
@@ -491,7 +500,7 @@ plt.show()
 
 <center>
 <div class="figure" >
-  <img src="utils/simu_malha_fechada.svg"
+  <img src="https://raw.githubusercontent.com/Oseiasdfarias/LabVirtual/e7b96ffe1f3381815025208252b203828a532819/simulacao_modelagem_aeropendulo/utils/simu_malha_fechada.svg"
        width="800"> 
 </div>
 </center>

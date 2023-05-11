@@ -4,10 +4,24 @@ author: "Yuri Cota"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+<div>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<span class="tab"></span><b>Projeto:</b> Laboratório Virtual de Sistema de Controle
+
+<span class="tab"></span><b>Título:</b>: Simulação Gráfica do Maglev com a Biblioteca <b>VPython</b>
+
+<span class="tab"></span><b>Autor:</b><a href="https://github.com/cotabr" target="_blank">
+Yuri Cota</a>
+
+<span class="tab"></span><b>Orientadores:</b>
+
+<span class="tab1"></span>Prof. Dr: Raphael Teixeira
+
+<span class="tab1"></span>Prof. Dr: Rafael Bayma
+
+</div>
+
+<br>
 
 # **1. INTRODUÇÃO**
 <!---
