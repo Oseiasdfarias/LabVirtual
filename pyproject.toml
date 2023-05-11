@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "labvirtual"
-version = "0.2.2"
+version = "0.2.3"
 description = "Biblioteca de simulação gráfica 3D de ambientes para estudo de controle de sistema."
 authors = ["Oseiasdfarias <oseias.dfarias@gmail.com>"]
 readme = "README.md"
@@ -16,6 +16,10 @@ control = "^0.9.3.post2"
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.2.0"
 mkdocs = "^1.4.3"
+pymdown-extensions = "^9.11"
+mkdocstrings = "^0.21.2"
+mkdocs-material = "^9.1.11"
+mkdocstrings-python = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
