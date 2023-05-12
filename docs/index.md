@@ -3,7 +3,11 @@ hide:
   - toc
 ---
 
-# Documentação Labvirtual
+<center>
+
+# Documentação da Biblioteca Python - Labvirtual
+
+</center>
 
 <!--
 
