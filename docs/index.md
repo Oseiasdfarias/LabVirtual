@@ -100,6 +100,11 @@ Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **ma
 
 #### **Exemplo Maglev**
 
+<figure markdown>
+  ![Demostração Maglev](https://github.com/Oseiasdfarias/LabVirtual/blob/dev/simulacao_modelagem_aeropendulo/utils/demo_maglev.png?raw=true)
+  <figcaption>Demostração Maglev</figcaption>
+</figure>
+
 ```py
 # -----------------------------------------------------
 # Universidade Federal do Pará
