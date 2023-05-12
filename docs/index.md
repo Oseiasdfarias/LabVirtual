@@ -1,5 +1,11 @@
+---
+hide:
+  - toc
+---
+
 # Documentação Labvirtual
 
+<!--
 
 <center>
 <div class="figure" >
@@ -18,11 +24,17 @@
 <b>Faculdade de Engenharia Elétrica</b>
 </center>
 
+-->
+
 <br>
 
+<center>
+    :material-robot-industrial-outline:{ .robot }
+</center>
 
+<br>
  Link do <a href="https://pypi.org/project/labvirtual/" target="_blank">
-PyPi</a>.
+PyPi</a> :material-robot-industrial-outline:.
 
 Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formatar um laboratório virtual para sistemas dinâmicos e controle na Faculdade de Engenharia Elétrica da UFPA-Tucuruí.
 

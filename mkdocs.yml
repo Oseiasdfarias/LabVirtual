@@ -1,31 +1,42 @@
-site_name: Documentação da Biblioteca Labvirtual
+site_name: Documentação Labvirtual
+
+repo_url: https://github.com/raphateixeira/LabVirtual
+repo_name: labvirtual de Controle
 
 theme:
+  icon:
+    logo: material/robot-industrial-outline
+    repo: fontawesome/brands/github 
   name: "material"
   features:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - header.autohide
   palette:
     - scheme: default
       primary: blue
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-7
         name: Modo Noturno
     - scheme: slate
       primary: deep blue
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-4
         name: Modo Claro
-  extra_css:
-    - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
-  - pymdownx.emoji          # suporte a emojis
   - pymdownx.tasklist       # suporte a lista de tarefas
   - pymdownx.mark           # suporte a mrcações
   - pymdownx.tilde          # suporte a tachado
@@ -38,6 +49,9 @@ markdown_extensions:
   - md_in_html
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji:          # suporte a emojis
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
   - search:
@@ -46,3 +60,5 @@ plugins:
         python:
           import:
           - https://docs.python-requests.org/en/master/objects.inv
+
+copyright: Copyright &copy; 2023 Oséias Farias
