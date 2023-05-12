@@ -57,6 +57,8 @@ Projeto no GitHub</a>
 </table>
 </center>
 
+---
+
 ## Instalação da Biblioteca
 
 ### Como Instalar?
@@ -82,6 +84,8 @@ conda install labvirtual
 poetry add labvirtual
 ```
 
+---
+
 ## Sistemas de interesse:
 
 Sistemas possíveis:
@@ -91,6 +95,7 @@ Maglev</a>
 + 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/">
 Aeropêndulo</a>
 
+---
 
 ## Introdução
 
@@ -262,11 +267,13 @@ if __name__ == "__main__":
 
 <br>
 
+---
+
 #### **Exemplo Aeropêndulo**
 
 <figure markdown>
   ![Demostração Maglev](https://github.com/Oseiasdfarias/LabVirtual/blob/master/simulacao_modelagem_aeropendulo/utils/simulacao.png?raw=true)
-  <figcaption>Demostração Maglev</figcaption>
+  <figcaption>Demostração Aeropêndulo</figcaption>
 </figure>
 
 
