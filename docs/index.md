@@ -174,8 +174,8 @@ def run_maglev():
         elif sim.cil.pos == vp.vector(0, 0, 0):
             grafico.legenda_1.text = "<b>Cilindo grudado!</b>"
             grafico.legenda_1.color = vp.color.red
-        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >=\
-                -0.08 and sim.cil.pos.x == 0:
+        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >= -0.08 and\
+                sim.cil.pos.x == 0:
             grafico.legenda_1.text = legenda_2
             grafico.legenda_1.color = vp.color.cyan
         else:
@@ -255,7 +255,15 @@ if __name__ == "__main__":
 
 ```
 
+<br>
+
 #### **Exemplo Aeropêndulo**
+
+<figure markdown>
+  ![Demostração Maglev](https://github.com/Oseiasdfarias/LabVirtual/blob/master/simulacao_modelagem_aeropendulo/utils/simulacao.png?raw=true)
+  <figcaption>Demostração Maglev</figcaption>
+</figure>
+
 
 ```py
 # -----------------------------------------------------

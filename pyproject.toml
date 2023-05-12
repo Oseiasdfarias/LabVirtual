@@ -16,6 +16,7 @@ pymdown-extensions = "^9.11"
 mkdocstrings = "^0.21.2"
 mkdocs-material = "^9.1.11"
 mkdocstrings-python = "^1.0.0"
+mkdocs-glightbox = "^0.3.4"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.2.0"

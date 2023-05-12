@@ -56,8 +56,8 @@ def run_maglev():
         elif sim.cil.pos == vp.vector(0, 0, 0):
             grafico.legenda_1.text = "<b>Cilindo grudado!</b>"
             grafico.legenda_1.color = vp.color.red
-        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >=\
-                -0.08 and sim.cil.pos.x == 0:
+        elif sim.cil.pos.y <= 0 and sim.cil.pos.y >= -0.08 and\
+                sim.cil.pos.x == 0:
             grafico.legenda_1.text = legenda_2
             grafico.legenda_1.color = vp.color.cyan
         else:
