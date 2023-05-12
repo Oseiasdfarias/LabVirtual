@@ -79,7 +79,6 @@ Maglev</a>
 + 2 - <a href="https://labvirtual.readthedocs.io/pt/latest/Modelagem_dos_sistemas/aeropendulo_doc/">
 Aeropêndulo</a>
 
-<br>
 
 ## Introdução
 
@@ -89,7 +88,7 @@ Para testar a biblioteca, você pode instala-lá e criar um arquivo chamado **ma
 
 #### **Exemplo Maglev**
 
-```python
+```py
 # -----------------------------------------------------
 # Universidade Federal do Pará
 # Campus Universitário de Tucuruí
@@ -246,7 +245,7 @@ if __name__ == "__main__":
 
 #### **Exemplo Aeropêndulo**
 
-```python
+```py
 # -----------------------------------------------------
 # Universidade Federal do Pará
 # Campus Universitário de Tucuruí

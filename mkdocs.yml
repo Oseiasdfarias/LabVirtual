@@ -17,10 +17,10 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Modo Claro
-#  extra_css:
-#    - stylesheets/extra.css
+  extra_css:
+    - stylesheets/extra.css
 extra_javascript:
-  - utils/javascripts/mathjax.js
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -30,7 +30,12 @@ markdown_extensions:
   - pymdownx.mark           # suporte a mrcações
   - pymdownx.tilde          # suporte a tachado
   - pymdownx.highlight      # suporte a código
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.betterem
+  - attr_list
+  - md_in_html
   - pymdownx.arithmatex:
       generic: true
 

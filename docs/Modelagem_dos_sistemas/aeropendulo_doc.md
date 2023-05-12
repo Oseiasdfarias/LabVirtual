@@ -104,8 +104,6 @@ Oséias Farias</a>
 
 ---
 
-<br>
-
 # Modelagem e Simulação Aeropêndulo
 
 <center>
@@ -116,7 +114,7 @@ Oséias Farias</a>
 </div>
 </center>
 
-<div align="justify"><p style="text-indent: 50px;">Usando as leis de Newton e momentos angulares podemos encontrar o modelo matemático que descreve a dinâmica do aeropêndulo, assim, temos a equação $\bf(01)$ que modela o sistema em questão.</p></div>
+<div align="justify"><p style="text-indent: 50px;">Usando as leis de Newton e momentos angulares podemos encontrar o modelo matemático que descreve a dinâmica do aeropêndulo, assim, temos a equação <b>(01)</b>  que modela o sistema em questão.</p></div>
 
 $$
 \begin{align}
@@ -125,7 +123,7 @@ $$
 $$
 
 
-<div align="justify"><p style="text-indent: 50px;">Queremos controlar o ângulo do braço do aeropêndulo a partir da tensão aplicada aos terminais do motor, assim,devemos encontrar uma relação entre a tensão $\bf V$ nos terminais do motor e o empuxo $\bf T$ gerado pela hélice, essa relação é não linear, porém é possível aproximar por uma relação linear, como mostra a expressão $\bf(02)$.</p></div>
+<div align="justify"><p style="text-indent: 50px;">Queremos controlar o ângulo do braço do aeropêndulo a partir da tensão aplicada aos terminais do motor, assim,devemos encontrar uma relação entre a tensão <b>V</b> nos terminais do motor e o empuxo <b>T</b> gerado pela hélice, essa relação é não linear, porém é possível aproximar por uma relação linear, como mostra a expressão <b>(02)</b>.</p></div>
 
 $$
 \begin{align}
@@ -171,11 +169,11 @@ Onde:
 </ul>
 </div>
 
-<br><br>
+---
 
 ## Linearização do Sistema
 
-<div align="justify"><p style="text-indent: 50px;">Uma das técnicas de linearização quando se tem sistemas não lineares que a componente não linear é o seno ou cosseno é  considerar o seno ou cosseno sendo o valor do próprio ângulo, isso funciona bem para pequenas variações em torno do ângulo, aplicando essa técnica ao modelo do aeropêndulo, temos a equação $\bf(07)$.
+<div align="justify"><p style="text-indent: 50px;">Uma das técnicas de linearização quando se tem sistemas não lineares que a componente não linear é o seno ou cosseno é  considerar o seno ou cosseno sendo o valor do próprio ângulo, isso funciona bem para pequenas variações em torno do ângulo, aplicando essa técnica ao modelo do aeropêndulo, temos a equação <b>(07)</b>.
 </p></div>
 
 $$
@@ -245,7 +243,6 @@ $$
 Para simulação foi usado os parâmetros do artigo $\bf[1]$.
 
 $$
-\begin{align}
   \begin{array}{|c|c|}                                        \hline
   \text { Parâmetros do Aeropêndulo } & \text{Valores}      \\ \hline
   K_m     &   0,0296                                        \\ \hline
@@ -255,14 +252,15 @@ $$
   g       &   9,8 m/s^2                                     \\ \hline
   c       &   0,0076 Nms/rad                                \\ \hline
   \end{array}
-\end{align}
 $$
 
 <br>
 
+---
+
 ## Resposta ao degrau usando Python
 
-<div align="justify"><p style="text-indent: 50px;">Para realizar a simulação da resposta ao degrau foi usado Python com o auxílio das bibliotecas numpy, matplotlib e control, sendo que as bibliotecas numpy e matplotlib são usada para criar as matrizes A, B, C e D e plotar a resposta do do sistema, respectivamente, já a biblioteca control é usada para criar o sistema no espaço de estados e obter a função de transferência, além disso, é possível obter a resposta ao degrau usando a função **step** da biblioteca control, que recebe como parâmetro o sistema criado anteriormente, no espaço de estados ou função de transferência.</p></div>
+<div align="justify"><p style="text-indent: 50px;">Para realizar a simulação da resposta ao degrau foi usado Python com o auxílio das bibliotecas numpy, matplotlib e control, sendo que as bibliotecas numpy e matplotlib são usada para criar as matrizes <strong>A</strong>, <strong>B</strong>, <strong>C</strong> e <strong>D</strong> e plotar a resposta do do sistema, respectivamente, já a biblioteca control é usada para criar o sistema no espaço de estados e obter a função de transferência, além disso, é possível obter a resposta ao degrau usando a função <strong>step</strong> da biblioteca control, que recebe como parâmetro o sistema criado anteriormente, no espaço de estados ou função de transferência.</p></div>
 
 ### Importando as bibliotecas Python usadas
 
@@ -305,7 +303,7 @@ D = 0
 
 <br>
 
-<div align="justify"><p style="text-indent: 50px;">Para criar o sistema no espaço de estados, foi usado a biblioteca Python, **control**, essa biblioteca permite criar um sistema no espaço de estados a partir das matrizes **A**, **B**, **C**, **D**</p></div>
+<div align="justify"><p style="text-indent: 50px;">Para criar o sistema no espaço de estados, foi usado a biblioteca Python, <strong>control</strong>, essa biblioteca permite criar um sistema no espaço de estados a partir das matrizes <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong></p></div>
 
 ```python
 sys = ct.ss(A, B, C, D)
@@ -314,7 +312,7 @@ print(sys)
 
 ### Obtendo a Função de Transferência a partir do Espaço de Estados
 
-<div align="justify"><p style="text-indent: 50px;">Para obter a função de transferência a partir do sistema no espaço de estados, a biblioteca control implementa uma função, ct.ss2tf(sys), que recebe como parâmetro, o sistema no espaço de estados e retorna a função de transferência.</p></div>
+<div align="justify"><p style="text-indent: 50px;">Para obter a função de transferência a partir do sistema no espaço de estados, a biblioteca control implementa uma função, <strong>ct.ss2tf(sys)</strong>, que recebe como parâmetro, o sistema no espaço de estados e retorna a função de transferência.</p></div>
 
 ```python
 Gs = ct.ss2tf(sys)
@@ -327,7 +325,7 @@ Gs
 
 #### Explicando as diferentes funções da biblioteca control
 
-<div align="justify"><p style="text-indent: 50px;">A função **ct.step_info()** recebe como parâmetro o sistema no espaço de estados ou uma função de transferência e retorna as características do sistema, para esse exemplo, ao aplicar a função ela retorna diversas características, exemplo:</p></div>
+<div align="justify"><p style="text-indent: 50px;">A função <strong>ct.step_info()</strong> recebe como parâmetro o sistema no espaço de estados ou uma função de transferência e retorna as características do sistema, para esse exemplo, ao aplicar a função ela retorna diversas características, exemplo:</p></div>
 
 <ul>
   <li><b>Tempo de acomodação</b> ->    'SettlingTime': 10.308519357198815'</li>
@@ -353,7 +351,7 @@ ct.step_info(sys)
  'SteadyStateValue': 0.2796674225245654}
 ```
 
-<div align="justify"><p style="text-indent: 50px;">A função **ct.damp()** recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os Autovalores, amortecimento e frequência natural para cada polo do sistema.</p></div>
+<div align="justify"><p style="text-indent: 50px;">A função <strong>ct.damp()</strong> recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os Autovalores, amortecimento e frequência natural para cada polo do sistema.</p></div>
 
 ```python
 ct.damp(sys);
@@ -367,7 +365,7 @@ _____Eigenvalue______ Damping___ Frequency_
    -0.3585    -3.139j     0.1135       3.16
 ```
 
-<div align="justify"><p style="text-indent: 50px;">A função **ct.poles()** recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os polos do sistema, para esse caso o sistema é de segunda ordem, pois possui dois pólos.</p></div>
+<div align="justify"><p style="text-indent: 50px;">A função <strong>ct.poles()</strong> recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os polos do sistema, para esse caso o sistema é de segunda ordem, pois possui dois pólos.</p></div>
 
 ```python
 ct.poles(sys)
@@ -379,7 +377,7 @@ ct.poles(sys)
 array([-0.35849057+3.13948884j, -0.35849057-3.13948884j])
 ```
 
-<div align="justify"><p style="text-indent: 50px;">A função **ct.zeros()** recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os zeros do sistema. para esse caso o sistema não possui zeros.</p></div>
+<div align="justify"><p style="text-indent: 50px;">A função <strong>ct.zeros()</strong> recebe como argumento o sistema no espaço de estados ou a função de transferência e retorna os zeros do sistema. para esse caso o sistema não possui zeros.</p></div>
 
 ```python
 ct.zeros(sys)
@@ -413,9 +411,9 @@ plt.show()
 </div>
 </center>
 
+<br>
 
-<br><br>
-
+---
 
 ## Controlador projetado usando LGR com auxílio do Matlab
 
@@ -503,7 +501,6 @@ plt.show()
 
 <div align="justify"><p style="text-indent: 50px;">Ao analisar o sistema com o controlador, temos que o sistema não possui erro em regime permanente e seu overshoot é zero, no entanto, para que esses requisitos fossem obtidos ouve um aumento no tempo de acomodação.</p></div>
 
-<br>
 
 ## Função de Transferência Discreta C(z)
 
@@ -563,7 +560,7 @@ $$
 
 <div align="justify"><p style="text-indent: 50px;">com a função de diferenças encontrada, agora é possível implementa-la usando python e fecha a malha com o controlador para simular, essa lógica está implementada no simulador.</p></div>
 
-<br><br>
+<br>
 
 # Referências
 
@@ -571,16 +568,10 @@ $$
 <dl>
 <dd><b>[1.]</b> JOB, Mila Mary; JOSE, P. Subha Hency. <b> Modeling and control of mechatronic aeropendulum.</b> In: 2015 International Conference on Innovations in Information, Embedded and Communication Systems (ICIIECS). IEEE, 2015. p. 1-5.</dd>
 
-<br>
-
 <dd><b>[2.]</b> Silva. Yago. <b> Projeto, construção e controle de um aeropêndulo
 </b>. Centro de Engenharia Elétrica e Informática, Departamento de Engenharia Elétrica e Informática, Universidade Federal de Campina Grande - UFCG, 2018.</dd>
 
-<br>
-
 <dd><b>[3.]</b> MOHAMMADBAGHERI, Amin; YAGHOOBI, Mahdi. <b>A new approach to control a driven pendulum with PID method.</b> In: 2011 UkSim 13th International Conference on Computer Modelling and Simulation. IEEE, 2011. p. 207-211.</dd>
-
-<br>
 
 <dd><b>[4.]</b> SILVA, Yago Luiz Monteiro et al. <b>Projeto, construção e controle de um aeropêndulo<b>. 2018.</dd>
 
