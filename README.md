@@ -22,8 +22,8 @@ Compartilhamos aqui alguns conteúdos que estamos desenvolvendo buscando formata
 
 ## Documentação da Biblioteca
 Para ter acesso a documentação da biblioteca acesse: 
-<a href="https://labvirtual.readthedocs.io" target="_blank">
-Documentação Labvirtual</a>
+
+> ###  [Documentação Labvirtual](https://labvirtual.readthedocs.io)
 
 <br>
 
